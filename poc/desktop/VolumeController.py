@@ -12,7 +12,7 @@ from comtypes import CLSCTX_ALL
 import comtypes
 
 class AudioController:
-    def __init__(self, process_name: str):
+    def __init__(self, process_name = ""):
         self._process_name = process_name
         self._endpoint = AudioUtilities.GetSpeakers()
 
@@ -58,14 +58,15 @@ class AudioController:
     def set_endpoint_device(self, name: str):
         """Sets the endpoint to the Friendly Name of the matching endpoint"""
         for dev in AudioUtilities.GetAllDevices():
-            if name == dev.FriendlyName:
-                self._endpoint = dev._dev
-                return
+            if dev._dev is not None and dev.FriendlyName is not None:
+                if name == dev.FriendlyName:
+                    self._endpoint = dev._dev
+                    return
         raise ValueError("Endpoint not found")
 
     def get_endpoints(self) -> list[str]:
         """Returns a list of the Friendly Names of all of the endpoints"""
-        return [i.FriendlyName for i in AudioUtilities.GetAllDevices()]
+        return [i.FriendlyName for i in AudioUtilities.GetAllDevices() if i.FriendlyName is not None]
 
     def mute(self):
         """Mutes the process"""
@@ -87,10 +88,10 @@ class AudioController:
     def get_process_names(self) -> list[str]:
         """Returns a list of the process names for the endpoint"""
         sessions = self._get_sessions()
-        return [i.Process.name for i in sessions]
+        return [i.Process.name() for i in sessions if i.Process is not None]
 
     @staticmethod
     def get_default_process_names() -> list[str]:
         """Returns a list of the process names for the default endpoint"""
         sessions = AudioUtilities.GetAllSessions()
-        return [i.Process.name for i in sessions]
+        return [i.Process.name() for i in sessions if i.Process is not None]
