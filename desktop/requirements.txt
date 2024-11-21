@@ -1,2 +1,6 @@
 pycaw
 comtypes
+pyserial
+numpy
+pyaudio
+pyside6

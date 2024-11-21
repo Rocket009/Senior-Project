@@ -11,8 +11,9 @@ import comtypes
 import platform
 
 class WindowsAudioController:
-    def __init__(self, process_name = ""):
+    """This class can control the Volume of Windows applications"""
 
+    def __init__(self, process_name=""):
         if platform.system() != "Windows":
             raise OSError("This class only works on Windows")
 
@@ -23,7 +24,7 @@ class WindowsAudioController:
         o = self._endpoint.Activate(IAudioSessionManager2._iid_, comtypes.CLSCTX_ALL, None)
         mgr = o.QueryInterface(IAudioSessionManager2)
         if mgr is None:
-            return None
+            return []
         sess_enum = mgr.GetSessionEnumerator()
         count = sess_enum.GetCount()
 
@@ -48,11 +49,10 @@ class WindowsAudioController:
         raise Exception("Could not find process in endpoint")
 
     @property
-    def process_name(self) -> str:
+    def selected_process_name(self) -> str:
         return self._process_name
 
-    @process_name.setter
-    def set_process_name(self, process_name: str):
+    def set_selected_process_name(self, process_name: str):
         if process_name in self.get_process_names():
             self._process_name = process_name
         else:
