@@ -69,14 +69,14 @@
         let isDragging = false;
         let last_value = 0;
 
-        if(socket.readyState !== WebSocket.OPEN) {
-            alert(`Could not connect to websocket at ${hostname}`);
-        }
-        
         socket.onmessage = function(data){
             const jsond = JSON.parse(data.data);
             updateDial(jsond.volume);
             app_name.innerHTML = jsond.process;
+        };
+
+        socket.error = function(error) {
+            alert(error);
         };
         // Converts angle to a percentage value
         function angleToValue(angle) {

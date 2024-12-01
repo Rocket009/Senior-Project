@@ -5,11 +5,27 @@ import json
 import http.server as hpserv
 import socketserver
 from typing import Optional, Callable
+from pathlib import Path
 
 class HttpHandler(hpserv.SimpleHTTPRequestHandler):
     def do_GET(self):
         if self.path == "/":
-            self.path = "test.html"
+            p = Path(__file__).absolute().parent / "web_files" / "test.html"
+            
+            if p.exists():
+                # Send HTTP headers
+                self.send_response(200)
+                self.send_header("Content-type", "text/html")
+                self.end_headers()
+                
+                # Serve the file content
+                with open(p, "rb") as file:
+                    self.wfile.write(file.read())
+                return
+            else:
+                # File not found
+                self.send_error(404, "File not found")
+                return
         return hpserv.SimpleHTTPRequestHandler.do_GET(self)
 
     def end_headers(self):
