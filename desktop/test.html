@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Mix Pro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #dial {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: conic-gradient(
+                #4caf50 0% var(--value),
+                #ccc var(--value) 100%
+            );
+            position: relative;
+            margin: 0 auto;
+            cursor: pointer;
+            user-select: none;
+        }
+        #dial::before {
+            content: attr(data-value) '%';
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #bar {
+            width: 25%;
+            height: 20px;
+            background-color: #ccc;
+            margin: 20px auto;
+            position: relative;
+        }
+        #bar-fill {
+            height: 100%;
+            background-color: #4caf50;
+            width: 0%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Real Mix Pro</h1>
+    <h3 id="app_name"></h3>
+    <div id="dial" data-value="50" style="--value: 50%;"></div>
+    <div id="bar">
+        <div id="bar-fill"></div>
+    </div>
+
+    <script>
+        const dial = document.getElementById('dial');
+        const barFill = document.getElementById('bar-fill');
+        const app_name = document.getElementById('app_name');
+        let hostname = new URL(window.location.href).hostname;
+        if(hostname === "") {
+            alert("Could not resolve hostname");
+            hostname = "ws://localhost:5000";
+        }
+        else {
+            hostname = `ws://${hostname}:5000`;
+        }
+        const socket = new WebSocket(hostname);
+        let isDragging = false;
+        let last_value = 0;
+
+        if(socket.readyState !== WebSocket.OPEN) {
+            alert(`Could not connect to websocket at ${hostname}`);
+        }
+        
+        socket.onmessage = function(data){
+            const jsond = JSON.parse(data.data);
+            updateDial(jsond.volume);
+            app_name.innerHTML = jsond.process;
+        };
+        // Converts angle to a percentage value
+        function angleToValue(angle) {
+            return Math.round((angle / 360) * 100);
+        }
+
+        // Converts percentage value to CSS variable
+        function updateDial(value) {
+            const clampedValue = Math.max(0, Math.min(100, value));
+            dial.dataset.value = clampedValue;
+            dial.style.setProperty('--value', `${clampedValue}%`);
+            barFill.style.width = `${clampedValue}%`;
+        }
+
+        // Calculate the angle based on mouse/touch position
+        function calculateAngle(event) {
+            const rect = dial.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+            const x = (event.touches ? event.touches[0].clientX : event.clientX) - centerX;
+            const y = (event.touches ? event.touches[0].clientY : event.clientY) - centerY;
+            const angle = Math.atan2(y, x) * (180 / Math.PI) + 90;
+            return (angle < 0 ? 360 + angle : angle) % 360;
+        }
+
+        // Event listeners for interaction
+        dial.addEventListener('mousedown', startDragging);
+        dial.addEventListener('touchstart', startDragging);
+
+        document.addEventListener('mousemove', handleDrag);
+        document.addEventListener('touchmove', handleDrag);
+
+        document.addEventListener('mouseup', stopDragging);
+        document.addEventListener('touchend', stopDragging);
+
+        function startDragging(event) {
+            isDragging = true;
+            handleDrag(event);
+        }
+
+        function handleDrag(event) {
+            if (isDragging) {
+                const angle = calculateAngle(event);
+                const value = angleToValue(angle);
+                updateDial(value);
+                updateServer(value); // Auto-send updated value to the server
+            }
+        }
+
+        function stopDragging() {
+            isDragging = false;
+        }
+
+        // Update value on the server
+        function updateServer(value) {
+            if(last_value !== value) {
+                try {
+                    socket.send(JSON.stringify({volume: value}));
+                } catch (error) {
+                    alert(`Could not connect to websocket at ${hostname}\nError ${error}`);
+                }
+                last_value = value;
+            }
+        }
+
+    </script>
+</body>
+</html>
