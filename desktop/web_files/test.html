@@ -57,6 +57,7 @@
         const dial = document.getElementById('dial');
         const barFill = document.getElementById('bar-fill');
         const app_name = document.getElementById('app_name');
+        const bar = document.getElementById("bar");
         let hostname = new URL(window.location.href).hostname;
         if(hostname === "") {
             alert("Could not resolve hostname");
@@ -105,6 +106,8 @@
         // Event listeners for interaction
         dial.addEventListener('mousedown', startDragging);
         dial.addEventListener('touchstart', startDragging);
+        bar.addEventListener('mousedown', startDragging);
+        bar.addEventListener('touchstart', startDragging);
 
         document.addEventListener('mousemove', handleDrag);
         document.addEventListener('touchmove', handleDrag);
@@ -118,11 +121,18 @@
         }
 
         function handleDrag(event) {
-            if (isDragging) {
+            if (isDragging && event.target === dial) {
                 const angle = calculateAngle(event);
                 const value = angleToValue(angle);
                 updateDial(value);
                 updateServer(value); // Auto-send updated value to the server
+            }
+            else if(isDragging && (event.target === bar || event.target === barFill)) {
+                const rect = bar.getBoundingClientRect();
+                const x = (event.touches ? event.touches[0].clientX : event.clientX);
+                const pos = Math.round((x - rect.left) / rect.width * 100);
+                updateDial(pos);
+                updateServer(pos);
             }
         }
 
