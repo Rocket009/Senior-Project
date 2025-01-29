@@ -1,4 +1,5 @@
-from I2C_RPI_Interface import BaseI2C
+from ..common.I2CInterfaces import BaseI2C, I2CError
+from ..common.Exceptions import ModuleNotFoundError
 
 
 _HT16K33_BLINK_CMD = 0x80
@@ -20,12 +21,10 @@ class HT16K33:
         self._temp = bytearray(1)
         self._buffer = bytearray(17)
         self._auto_write = auto_write
+        self._blink_rate = 0
+        self._brightness = brightness 
         self.fill(0)
         self._write_cmd(_HT16K33_OSCILATOR_ON)
-        self._blink_rate = 0
-        self._brightness = None
-        self.blink_rate = 0
-        self.brightness = brightness
         self.fill(0)
 
     def _write_cmd(self, byte):
@@ -39,6 +38,8 @@ class HT16K33:
 
     @blink_rate.setter
     def blink_rate(self, rate: int):
+        if self._blink_rate == rate:
+            return
         if not 0 <= rate <= 3:
             raise ValueError("Blink rate must be an integer in the range: 0-3")
         rate = rate & 0x03
@@ -52,6 +53,8 @@ class HT16K33:
 
     @brightness.setter
     def brightness(self, brightness):
+        if self._brightness == brightness:
+            return
         if not 0.0 <= brightness <= 1.0:
             raise ValueError(
                 "Brightness must be a decimal number in the range: 0.0-1.0"
@@ -110,7 +113,10 @@ class HT16K33:
 
 class VisualizerDriver:
     def __init__(self, i2c_obj: BaseI2C, address=0x70):
-        self._ht = HT16K33(address=address, i2c_obj=i2c_obj, auto_write=False)
+        try:
+            self._ht = HT16K33(address=address, i2c_obj=i2c_obj, auto_write=False)
+        except I2CError:
+            raise ModuleNotFoundError(f"VisualizerDriver could not be found at address {address}")
 
     def set_bar(self, bar_num: int, level: int):
         """Sets the bar bar_num to a level between 0-10"""
