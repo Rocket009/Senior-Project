@@ -1,4 +1,4 @@
-from ..common.I2CInterfaces import BaseI2C, I2CError
+from common.I2CInterfaces import BaseI2C, I2CError
 from smbus2 import SMBus
 
 class I2CDriver(BaseI2C):

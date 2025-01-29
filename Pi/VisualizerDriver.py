@@ -1,5 +1,5 @@
-from ..common.I2CInterfaces import BaseI2C, I2CError
-from ..common.Exceptions import ModuleNotFoundError
+from common.I2CInterfaces import BaseI2C, I2CError
+from common.Exceptions import ModuleNotFoundError
 
 
 _HT16K33_BLINK_CMD = 0x80
