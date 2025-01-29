@@ -1,5 +1,5 @@
 from VisualizerDriver import VisualizerDriver
-from time import sleep_ms
+from time import sleep
 from I2CDriver import I2CDriver
 
 BARS_EN = (1, 2, 9)
@@ -13,7 +13,7 @@ try:
                     v.set_brightness(1.0)
                 else:
                     v.set_brightness(0.5)
-                sleep_ms(200)
+                sleep(0.2)
 
 except KeyboardInterrupt:
     pass
