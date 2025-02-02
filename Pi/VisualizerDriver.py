@@ -25,6 +25,8 @@ class HT16K33:
         self._brightness = brightness 
         self.fill(0)
         self._write_cmd(_HT16K33_OSCILATOR_ON)
+        self.blink_rate = 0
+        self.brightness = brightness
         self.fill(0)
 
     def _write_cmd(self, byte):

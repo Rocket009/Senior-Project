@@ -21,7 +21,7 @@ class I2CDriver(BaseI2C):
                 if len(buf) == 1:
                     self._smbus.write_byte(addr, buf[0])
                 else:
-                    self._smbus.write_block_data(addr, buf[0], buf[1:])
+                    self._smbus.write_i2c_block_data(addr, buf[0], buf[1:])
             except OSError:
                 raise I2CError(f"Cannot write to I2C device addr: {addr}")
 

@@ -2,7 +2,7 @@ from VisualizerDriver import VisualizerDriver
 from time import sleep
 from I2CDriver import I2CDriver
 
-BARS_EN = (1, 2, 9)
+BARS_EN = (0, 1, 8)
 try:
     v = VisualizerDriver(I2CDriver(1))
     while True:
