@@ -1,4 +1,4 @@
-from VisualizerDriver import VisualizerDriver
+from common.VisualizerDriver import VisualizerDriver
 from time import sleep
 from I2CDriver import I2CDriver
 

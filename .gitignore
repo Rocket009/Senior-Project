@@ -2,3 +2,5 @@
 *__pycache__*
 .micropico
 .vscode
+*egg-info*
+build
