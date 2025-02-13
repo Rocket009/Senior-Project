@@ -1,6 +1,0 @@
-Removed Pin From Net: NetName=GND Pin=U29-10
-Added Pin To Net: NetName=RPI_ZERO_5V Pin=C40-1
-Added Pin To Net: NetName=RPI_ZERO_5V Pin=C77-1
-Added Pin To Net: NetName=RPI_ZERO_5V Pin=J2-1
-Added Pin To Net: NetName=RPI_ZERO_5V Pin=J2-5
-Added Pin To Net: NetName=NetC41_2 Pin=U29-10

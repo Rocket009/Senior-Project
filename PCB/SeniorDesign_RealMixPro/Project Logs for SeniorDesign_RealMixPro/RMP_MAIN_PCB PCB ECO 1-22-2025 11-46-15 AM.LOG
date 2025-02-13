@@ -1,2 +1,0 @@
-Removed Pin From Net: NetName=UART_TX_ZERO Pin=U25-36
-Added Pin To Net: NetName=UART_TX_ZERO Pin=U25-8
