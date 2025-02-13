@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=USB_D- Pin=TP34-1
+Removed Pin From Net: NetName=USB_D+ Pin=TP35-1
+Removed Member From Class: ClassName=USB_HUB Member=TP34
+Removed Member From Class: ClassName=USB_HUB Member=TP35

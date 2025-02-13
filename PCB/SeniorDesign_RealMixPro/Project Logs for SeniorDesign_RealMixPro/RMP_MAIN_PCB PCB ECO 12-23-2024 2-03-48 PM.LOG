@@ -1,0 +1,31 @@
+Added Component: Designator=B?(PTA30432010CIB103)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "PTA3043-2010CIB103"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "null?utm_currency=USD&region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.bourns.com/docs/Product-Datasheets/pta.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "16.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "PTA3043-2010CIB103"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "652-PTA3432010CIB103"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Bourns/PTA3043-2010CIB103?qs=QARuOjD9jaF0iQfIvhCxcQ%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=B?(PTA30432010CIB103)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "PTA3043-2010CIB103"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "null?utm_currency=USD&region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.bourns.com/docs/Product-Datasheets/pta.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "16.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "PTA3043-2010CIB103"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "652-PTA3432010CIB103"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Bourns/PTA3043-2010CIB103?qs=QARuOjD9jaF0iQfIvhCxcQ%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=U?(MUA08A-M)
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Type"; VariantName = "[No Variations]"
+Added Class: Name=RMP_SLIDER_MODULE
+Added Member To Class: ClassName=RMP_MAIN_HFB Member=Component J? PJ-002B
+Added Member To Class: ClassName=RMP_MAIN Member=Component J? 12402012E212A
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component R? RNCP0805FTD10K0
+Added Member To Class: ClassName=RMP_MAIN Member=Component R? RT0805FRE075K1L
+Added Member To Class: ClassName=RMP_MAIN Member=Component U? SC091413
+Added Member To Class: ClassName=RMP_MAIN Member=Component U? NCP1117LPST33T3G
+Added Member To Class: ClassName=RMP_MAIN Member=Component U? W25Q128JVSIQ
+Add Class Member: Failed to add class member : Component U HT16K33

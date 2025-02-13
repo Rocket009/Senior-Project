@@ -1,0 +1,35 @@
+Removed Pin From Net: NetName=GND Pin=LED3-1
+Removed Pin From Net: NetName=D+_PICO Pin=R4-2
+Removed Pin From Net: NetName=D-_PICO Pin=R5-2
+Removed Pin From Net: NetName=GND Pin=U29-18
+Removed Member From Class: ClassName=USB_HUB Member=LED3
+Removed Member From Class: ClassName=USB_HUB Member=R46
+Added Component: Designator=C78(CC0805N_YAG-M)
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Added Component: Designator=U30(PDIP8_300MC_MCH)
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Microchip"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Type"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3.3V_HUB Pin=C78-1
+Added Pin To Net: NetName=GND Pin=C78-2
+Added Pin To Net: NetName=GND Pin=U30-1
+Added Pin To Net: NetName=GND Pin=U30-2
+Added Pin To Net: NetName=GND Pin=U30-3
+Added Pin To Net: NetName=GND Pin=U30-4
+Added Pin To Net: NetName=3.3V_HUB Pin=U30-7
+Added Pin To Net: NetName=3.3V_HUB Pin=U30-8
+Added Pin To Net: NetName=D+_PICO_P Pin=R4-2
+Added Net: Name=D+_PICO_P
+Added Pin To Net: NetName=D-_PICO_N Pin=R5-2
+Added Net: Name=D-_PICO_N
+Added Pin To Net: NetName=NetU29_18 Pin=U29-18
+Added Pin To Net: NetName=NetU29_18 Pin=U30-6
+Added Net: Name=NetU29_18
+Added Pin To Net: NetName=NetU29_26 Pin=U29-26
+Added Pin To Net: NetName=NetU29_26 Pin=U30-5
+Added Net: Name=NetU29_26
+Added Member To Class: ClassName=USB_HUB Member=Component C78 CC0805KRX7R9BB104
+Added Member To Class: ClassName=USB_HUB Member=Component U30 AT24C02D-PUM

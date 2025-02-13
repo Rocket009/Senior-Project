@@ -1,0 +1,551 @@
+UNITS=MM
+#
+#Component attribute names
+#
+@0 .comp_mount_type
+@1 .comp_height
+@2 .no_pop
+@3 .comp_ignore
+@4 .comp_variant_list
+
+#
+#Component attribute text strings
+#
+
+# CMP 0
+CMP 24 89.3572 107.7214 270 N U30 AT24C02D-PUM ;0=2,1=0.0000
+PRP Mfr_Name 'Microchip'
+PRP RefDes 'RefDes'
+PRP Type 'Type'
+TOP 0 89.3572 107.7214 270 N 118 122 1
+TOP 1 86.8172 107.7214 270 N 118 123 2
+TOP 2 84.2772 107.7214 270 N 118 130 3
+TOP 3 81.7372 107.7214 270 N 118 131 4
+TOP 4 81.7372 115.3414 270 N 2 1 5
+TOP 5 84.2772 115.3414 270 N 3 1 6
+TOP 6 86.8172 115.3414 270 N 20 1 7
+TOP 7 89.3572 115.3414 270 N 20 12 8
+#
+# CMP 1
+CMP 12 91.694 113.7666 90 N C78 CC0805KRX7R9BB104 ;0=1,1=0.0000
+PRP Mfr_Name 'Yageo'
+PRP RefDes ''
+PRP Type ''
+PRP Value '0.1uF'
+TOP 0 91.694 114.6937 90 N 20 4 1
+TOP 1 91.694 112.8395 90 N 118 32 2
+#
+# CMP 2
+CMP 40 78.32327744 105.37768104 270 N R49 RNCP0805FTD10K0 ;0=1,1=0.0000
+PRP Supplier_1 'Digikey'
+PRP Supplier_Part_Number_1 'RNCP0805FTD10K0CT-ND'
+PRP Value 'DNI'
+TOP 0 78.32327744 104.55218104 270 N 118 35 1
+TOP 1 78.32327744 106.20318104 270 N 8 0 2
+#
+# CMP 3
+CMP 40 80.1240968 105.37768104 90 N R47 RNCP0805FTD10K0 ;0=1,1=0.0000
+PRP Supplier_1 'Digikey'
+PRP Supplier_Part_Number_1 'RNCP0805FTD10K0CT-ND'
+PRP Value '10k ohm'
+TOP 0 80.1240968 106.20318104 90 N 8 1 1
+TOP 1 80.1240968 104.55218104 90 N 20 3 2
+#
+# CMP 4
+CMP 19 177.038 13.462 90 N R33 RT0805FRE134K7L ;0=1,1=0.0000
+PRP Automotive 'No'
+PRP Category 'Res'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf'
+PRP Composition 'Thin Film'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Resistors'
+PRP Device_Class_L3 'Chip SMD Resistors'
+PRP Footprint_Url 'http://www.yageo.com/exep/pages/download/literatures/PYu-R_Mount_10.pdf'
+PRP Height '0.6mm'
+PRP Ipc_Land_Pattern_Name 'RESC200125X50'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'Yageo'
+PRP Manufacturer_Part_Number 'RT0805FRE134K7L'
+PRP Octopart 'https://octopart.com/rt0805fre134k7l-yageo-16262042'
+PRP Package 'RT0805'
+PRP Power_Rating '0.125W'
+PRP Resistance 'DNI'
+PRP RoHS 'TRUE'
+PRP Series 'RT'
+PRP Temperature '-55°C to +155°C'
+PRP Temperature_Coefficient '50 ppm/°C'
+PRP Temperature_Range_High '+155°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.0001'
+PRP Value '4.7KO'
+PRP Voltage_Rating '150V'
+TOP 0 177.038 14.51200044 90 N 52 3 1
+TOP 1 177.038 12.41199956 90 N 32 1 2
+#
+# CMP 5
+CMP 19 174.498 13.462 90 N R32 RT0805FRE134K7L ;0=1,1=0.0000
+PRP Automotive 'No'
+PRP Category 'Res'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf'
+PRP Composition 'Thin Film'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Resistors'
+PRP Device_Class_L3 'Chip SMD Resistors'
+PRP Footprint_Url 'http://www.yageo.com/exep/pages/download/literatures/PYu-R_Mount_10.pdf'
+PRP Height '0.6mm'
+PRP Ipc_Land_Pattern_Name 'RESC200125X50'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'Yageo'
+PRP Manufacturer_Part_Number 'RT0805FRE134K7L'
+PRP Octopart 'https://octopart.com/rt0805fre134k7l-yageo-16262042'
+PRP Package 'RT0805'
+PRP Power_Rating '0.125W'
+PRP Resistance 'DNI'
+PRP RoHS 'TRUE'
+PRP Series 'RT'
+PRP Temperature '-55°C to +155°C'
+PRP Temperature_Coefficient '50 ppm/°C'
+PRP Temperature_Range_High '+155°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.0001'
+PRP Value '4.7KO'
+PRP Voltage_Rating '150V'
+TOP 0 174.498 14.51200044 90 N 52 0 1
+TOP 1 174.498 12.41199956 90 N 34 1 2
+#
+# CMP 6
+CMP 19 172.72 76.2 0 N R24 RT0805FRE134K7L ;0=1,1=0.0000
+PRP Automotive 'No'
+PRP Category 'Res'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf'
+PRP Composition 'Thin Film'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Resistors'
+PRP Device_Class_L3 'Chip SMD Resistors'
+PRP Footprint_Url 'http://www.yageo.com/exep/pages/download/literatures/PYu-R_Mount_10.pdf'
+PRP Height '0.6mm'
+PRP Ipc_Land_Pattern_Name 'RESC200125X50'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'Yageo'
+PRP Manufacturer_Part_Number 'RT0805FRE134K7L'
+PRP Octopart 'https://octopart.com/rt0805fre134k7l-yageo-16262042'
+PRP Package 'RT0805'
+PRP Power_Rating '0.125W'
+PRP Resistance 'DNI'
+PRP RoHS 'TRUE'
+PRP Series 'RT'
+PRP Temperature '-55°C to +155°C'
+PRP Temperature_Coefficient '50 ppm/°C'
+PRP Temperature_Range_High '+155°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.0001'
+PRP Value '4.7KO'
+PRP Voltage_Rating '150V'
+TOP 0 173.77000044 76.2 180 N 51 4 1
+TOP 1 171.66999956 76.2 180 N 110 2 2
+#
+# CMP 7
+CMP 19 172.71999492 78.74 0 N R23 RT0805FRE134K7L ;0=1,1=0.0000
+PRP Automotive 'No'
+PRP Category 'Res'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf'
+PRP Composition 'Thin Film'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Resistors'
+PRP Device_Class_L3 'Chip SMD Resistors'
+PRP Footprint_Url 'http://www.yageo.com/exep/pages/download/literatures/PYu-R_Mount_10.pdf'
+PRP Height '0.6mm'
+PRP Ipc_Land_Pattern_Name 'RESC200125X50'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'Yageo'
+PRP Manufacturer_Part_Number 'RT0805FRE134K7L'
+PRP Octopart 'https://octopart.com/rt0805fre134k7l-yageo-16262042'
+PRP Package 'RT0805'
+PRP Power_Rating '0.125W'
+PRP Resistance 'DNI'
+PRP RoHS 'TRUE'
+PRP Series 'RT'
+PRP Temperature '-55°C to +155°C'
+PRP Temperature_Coefficient '50 ppm/°C'
+PRP Temperature_Range_High '+155°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.0001'
+PRP Value '4.7KO'
+PRP Voltage_Rating '150V'
+TOP 0 173.76999536 78.74 180 N 51 1 1
+TOP 1 171.66999448 78.74 180 N 111 2 2
+#
+# CMP 8
+CMP 8 178.308 19.558 90 N C69 CL21B105KAFNNNE ;0=1,1=0.0000
+PRP Mfr_Name 'Samsung'
+PRP RefDes ''
+PRP Type ''
+PRP Value '1u F'
+TOP 0 178.308 20.5359 90 N 31 12 1
+TOP 1 178.308 18.5801 90 N 118 60 2
+#
+# CMP 9
+CMP 8 178.562 39.37 270 N C68 CL21B105KAFNNNE ;0=1,1=0.0000
+PRP Mfr_Name 'Samsung'
+PRP RefDes ''
+PRP Type ''
+PRP Value '1u F'
+TOP 0 178.562 38.3921 270 N 31 10 1
+TOP 1 178.562 40.3479 270 N 118 59 2
+#
+# CMP 10
+CMP 8 160.782 39.624 270 N C64 CL21B105KAFNNNE ;0=1,1=0.0000
+PRP Mfr_Name 'Samsung'
+PRP RefDes ''
+PRP Type ''
+PRP Value '1u F'
+TOP 0 160.782 38.6461 270 N 31 9 1
+TOP 1 160.782 40.6019 270 N 118 62 2
+#
+# CMP 11
+CMP 8 160.782 19.5199 90 N C63 CL21B105KAFNNNE ;0=1,1=0.0000
+PRP Mfr_Name 'Samsung'
+PRP RefDes ''
+PRP Type ''
+PRP Value '1u F'
+TOP 0 160.782 20.4978 90 N 31 8 1
+TOP 1 160.782 18.542 90 N 118 61 2
+#
+# CMP 12
+CMP 8 141.986 20.574 0 N C61 CL21B105KAFNNNE ;0=1,1=0.0000
+PRP Mfr_Name 'Samsung'
+PRP RefDes ''
+PRP Type ''
+PRP Value '1u F'
+TOP 0 142.9639 20.574 180 N 31 11 1
+TOP 1 141.0081 20.574 180 N 118 68 2
+#
+# CMP 13
+CMP 8 144.272 36.068 0 N C60 CL21B105KAFNNNE ;0=1,1=0.0000
+PRP Mfr_Name 'Samsung'
+PRP RefDes ''
+PRP Type ''
+PRP Value '1u F'
+TOP 0 145.2499 36.068 180 N 31 14 1
+TOP 1 143.2941 36.068 180 N 118 75 2
+#
+# CMP 14
+CMP 20 196.85 78.232 180 N C52 GRM21BR61C106KE15K ;0=1,1=0.0000
+PRP Mfr_Name 'Murata'
+PRP RefDes ''
+PRP Type ''
+PRP Value '10u F'
+TOP 0 195.8213 78.232 0 N 30 6 1
+TOP 1 197.8787 78.232 0 N 118 93 2
+#
+# CMP 15
+CMP 20 183.642 78.232 0 N C50 GRM21BR61C106KE15K ;0=1,1=0.0000
+PRP Mfr_Name 'Murata'
+PRP RefDes ''
+PRP Type ''
+PRP Value '10u F'
+TOP 0 184.6707 78.232 180 N 118 94 1
+TOP 1 182.6133 78.232 180 N 30 11 2
+#
+# CMP 16
+CMP 45 10.7696 78.7654 0 N TP8 TestPoint ;0=1,1=0.0000
+TOP 0 10.7696 78.7654 180 N 68 1 1
+#
+# CMP 17
+CMP 45 10.7442 82.6008 0 N TP7 TestPoint ;0=1,1=0.0000
+TOP 0 10.7442 82.6008 180 N 44 4 1
+#
+# CMP 18
+CMP 39 176.022 90.551 0 N U11 NCP1117LPST33T3G ;0=1,1=0.0000
+PRP Mfr_Name 'onsemi'
+PRP RefDes 'RefDes'
+PRP Type 'Type'
+TOP 0 178.3207 87.2744 180 N 118 96 1
+TOP 1 176.022 87.2744 180 N 51 3 2
+TOP 2 173.7233 87.2744 180 N 30 7 3
+#
+# CMP 19
+CMP 20 177.8 84.582 0 N C48 GRM21BR61C106KE15K ;0=1,1=0.0000
+PRP Mfr_Name 'Murata'
+PRP RefDes ''
+PRP Type ''
+PRP Value '10u F'
+TOP 0 178.8287 84.582 180 N 118 87 1
+TOP 1 176.7713 84.582 180 N 51 0 2
+#
+# CMP 20
+CMP 20 173.482 84.582 180 N C47 GRM21BR61C106KE15K ;0=1,1=0.0000
+PRP Mfr_Name 'Murata'
+PRP RefDes ''
+PRP Type ''
+PRP Value '10u F'
+TOP 0 172.4533 84.582 0 N 118 80 1
+TOP 1 174.5107 84.582 0 N 30 10 2
+#
+# CMP 21
+CMP 12 140.462 90.678 270 N C45 CC0805KRX7R9BB104 ;0=1,1=0.0000
+PRP Mfr_Name 'Yageo'
+PRP RefDes ''
+PRP Type ''
+PRP Value '0.1uF'
+TOP 0 140.462 89.7509 270 N 118 34 1
+TOP 1 140.462 91.6051 270 N 109 2 2
+#
+# CMP 22
+CMP 17 159.766 102.362 180 N U8 LM317DCYR ;0=1,1=0.0000
+PRP Alternate_PartNumber 'LM317DCY'
+PRP CompType 'IC'
+PRP Manufacturer 'Texas Instruments'
+PRP Mfr_Name 'Texas Instruments'
+PRP MountType 'SMT'
+PRP PackageReference 'DCY0004A'
+PRP PartNumber 'LM317DCYR'
+PRP RefDes 'RefDes'
+PRP RoHS 'Y'
+PRP SymbolCreater 'Altium'
+PRP Type 'TYPE'
+TOP 0 156.81600082 100.06199952 90 N 43 1 1
+TOP 1 156.81600082 102.362 90 N 44 1 2
+TOP 2 156.81600082 104.66200048 90 N 64 3 3
+TOP 3 162.71600172 102.362 90 N 44 6 4
+#
+# CMP 23
+CMP 19 206.756 76.2 180 N R20 RT0805FRE134K7L ;0=1,1=0.0000
+PRP Automotive 'No'
+PRP Category 'Res'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf'
+PRP Composition 'Thin Film'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Resistors'
+PRP Device_Class_L3 'Chip SMD Resistors'
+PRP Footprint_Url 'http://www.yageo.com/exep/pages/download/literatures/PYu-R_Mount_10.pdf'
+PRP Height '0.6mm'
+PRP Ipc_Land_Pattern_Name 'RESC200125X50'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'Yageo'
+PRP Manufacturer_Part_Number 'RT0805FRE134K7L'
+PRP Octopart 'https://octopart.com/rt0805fre134k7l-yageo-16262042'
+PRP Package 'RT0805'
+PRP Power_Rating '0.125W'
+PRP Resistance 'DNI'
+PRP RoHS 'TRUE'
+PRP Series 'RT'
+PRP Temperature '-55°C to +155°C'
+PRP Temperature_Coefficient '50 ppm/°C'
+PRP Temperature_Range_High '+155°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.0001'
+PRP Value '4.7KO'
+PRP Voltage_Rating '150V'
+TOP 0 205.70599956 76.2 0 N 30 2 1
+TOP 1 207.80600044 76.2 0 N 110 1 2
+#
+# CMP 24
+CMP 19 209.042 78.74 180 N R19 RT0805FRE134K7L ;0=1,1=0.0000
+PRP Automotive 'No'
+PRP Category 'Res'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf'
+PRP Composition 'Thin Film'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Resistors'
+PRP Device_Class_L3 'Chip SMD Resistors'
+PRP Footprint_Url 'http://www.yageo.com/exep/pages/download/literatures/PYu-R_Mount_10.pdf'
+PRP Height '0.6mm'
+PRP Ipc_Land_Pattern_Name 'RESC200125X50'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'Yageo'
+PRP Manufacturer_Part_Number 'RT0805FRE134K7L'
+PRP Octopart 'https://octopart.com/rt0805fre134k7l-yageo-16262042'
+PRP Package 'RT0805'
+PRP Power_Rating '0.125W'
+PRP Resistance 'DNI'
+PRP RoHS 'TRUE'
+PRP Series 'RT'
+PRP Temperature '-55°C to +155°C'
+PRP Temperature_Coefficient '50 ppm/°C'
+PRP Temperature_Range_High '+155°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.0001'
+PRP Value '4.7KO'
+PRP Voltage_Rating '150V'
+TOP 0 207.99199956 78.74 0 N 30 9 1
+TOP 1 210.09200044 78.74 0 N 111 1 2
+#
+# CMP 25
+CMP 34 152.654 97.79 180 N _  RNCF0805DTE360R ;0=1,1=0.0000
+PRP Mfr_Name 'Stackpole International'
+PRP RefDes ''
+PRP Type ''
+PRP Value '360 ohm'
+TOP 0 151.5999 97.79 0 N 118 33 1
+TOP 1 153.7081 97.79 0 N 43 3 2
+#
+# CMP 26
+CMP 34 153.67 101.346 270 N R17 RNCF0805DTE120R ;0=1,1=0.0000
+PRP Mfr_Name 'Stackpole International'
+PRP RefDes ''
+PRP Type ''
+PRP Value '120 ohm'
+TOP 0 153.67 100.2919 270 N 43 2 1
+TOP 1 153.67 102.4001 270 N 44 0 2
+#
+# CMP 27
+CMP 19 125.98399492 20.574 180 N R9 RT0805FRE134K7L ;0=1,1=0.0000
+PRP Automotive 'No'
+PRP Category 'Res'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf'
+PRP Composition 'Thin Film'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Resistors'
+PRP Device_Class_L3 'Chip SMD Resistors'
+PRP Footprint_Url 'http://www.yageo.com/exep/pages/download/literatures/PYu-R_Mount_10.pdf'
+PRP Height '0.6mm'
+PRP Ipc_Land_Pattern_Name 'RESC200125X50'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'Yageo'
+PRP Manufacturer_Part_Number 'RT0805FRE134K7L'
+PRP Octopart 'https://octopart.com/rt0805fre134k7l-yageo-16262042'
+PRP Package 'RT0805'
+PRP Power_Rating '0.125W'
+PRP Resistance '4.7KO'
+PRP RoHS 'TRUE'
+PRP Series 'RT'
+PRP Temperature '-55°C to +155°C'
+PRP Temperature_Coefficient '50 ppm/°C'
+PRP Temperature_Range_High '+155°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.0001'
+PRP Value '4.7KO'
+PRP Voltage_Rating '150V'
+TOP 0 124.93399448 20.574 0 N 53 0 1
+TOP 1 127.03399536 20.574 0 N 33 1 2
+#
+# CMP 28
+CMP 19 125.98399492 22.606 180 N R8 RT0805FRE134K7L ;0=1,1=0.0000
+PRP Automotive 'No'
+PRP Category 'Res'
+PRP ComponentLink2Description 'Datasheet'
+PRP ComponentLink2URL 'http://www.yageo.com/documents/recent/PYu-RT_1-to-0.01_RoHS_L_9.pdf'
+PRP Composition 'Thin Film'
+PRP Device_Class_L1 'Passive Components'
+PRP Device_Class_L2 'Resistors'
+PRP Device_Class_L3 'Chip SMD Resistors'
+PRP Footprint_Url 'http://www.yageo.com/exep/pages/download/literatures/PYu-R_Mount_10.pdf'
+PRP Height '0.6mm'
+PRP Ipc_Land_Pattern_Name 'RESC200125X50'
+PRP Lead_Free 'Yes'
+PRP Manufacturer 'Yageo'
+PRP Manufacturer_Part_Number 'RT0805FRE134K7L'
+PRP Octopart 'https://octopart.com/rt0805fre134k7l-yageo-16262042'
+PRP Package 'RT0805'
+PRP Power_Rating '0.125W'
+PRP Resistance '4.7KO'
+PRP RoHS 'TRUE'
+PRP Series 'RT'
+PRP Temperature '-55°C to +155°C'
+PRP Temperature_Coefficient '50 ppm/°C'
+PRP Temperature_Range_High '+155°C'
+PRP Temperature_Range_Low '-55°C'
+PRP Tolerance '0.0001'
+PRP Value '4.7KO'
+PRP Voltage_Rating '150V'
+TOP 0 124.93399448 22.606 0 N 53 3 1
+TOP 1 127.03399536 22.606 0 N 35 1 2
+#
+# CMP 29
+CMP 20 156.972 97.79 0 N C39 GRM21BR61C106KE15K ;0=1,1=0.0000
+PRP Mfr_Name 'Murata'
+PRP RefDes ''
+PRP Type ''
+PRP Value '10u F'
+TOP 0 158.0007 97.79 180 N 118 81 1
+TOP 1 155.9433 97.79 180 N 43 0 2
+#
+# CMP 30
+CMP 8 162.814 108.204 90 N C38 CL21B105KAFNNNE ;0=1,1=0.0000
+PRP Mfr_Name 'Samsung'
+PRP RefDes ''
+PRP Type ''
+PRP Value '1u F'
+TOP 0 162.814 109.1819 90 N 118 70 1
+TOP 1 162.814 107.2261 90 N 44 5 2
+#
+# CMP 31
+CMP 12 156.718 108.204 90 N C37 CC0805KRX7R9BB104 ;0=1,1=0.0000
+PRP Mfr_Name 'Yageo'
+PRP RefDes ''
+PRP Type ''
+PRP Value '0.1uF'
+TOP 0 156.718 109.1311 90 N 118 31 1
+TOP 1 156.718 107.2769 90 N 64 1 2
+#
+# CMP 32
+CMP 11 104.013 97.9424 0 N C14 CC0603KRX7R7BB104 ;0=1,1=0.0000
+PRP Mfr_Name 'Yageo'
+PRP RefDes ''
+PRP Type ''
+PRP Value '100nF'
+TOP 0 104.8385 97.9424 180 N 118 78 1
+TOP 1 103.1875 97.9424 180 N 109 9 2
+#
+# CMP 33
+CMP 11 100.33 95.1484 270 N C13 CC0603KRX7R7BB104 ;0=1,1=0.0000
+PRP Mfr_Name 'Yageo'
+PRP RefDes ''
+PRP Type ''
+PRP Value '100nF'
+TOP 0 100.33 94.3229 270 N 118 79 1
+TOP 1 100.33 95.9739 270 N 109 14 2
+#
+# CMP 34
+CMP 11 96.774 95.1484 270 N C12 CC0603KRX7R7BB104 ;0=1,1=0.0000
+PRP Mfr_Name 'Yageo'
+PRP RefDes ''
+PRP Type ''
+PRP Value '100nF'
+TOP 0 96.774 94.3229 270 N 118 82 1
+TOP 1 96.774 95.9739 270 N 109 15 2
+#
+# CMP 35
+CMP 11 98.806 89.6874 270 N C10 CC0603KRX7R7BB104 ;0=1,1=0.0000
+PRP Mfr_Name 'Yageo'
+PRP RefDes ''
+PRP Type ''
+PRP Value '100nF'
+TOP 0 98.806 88.8619 270 N 118 85 1
+TOP 1 98.806 90.5129 270 N 109 12 2
+#
+# CMP 36
+CMP 11 99.187 95.1484 270 N C7 CC0603KRX7R7BB104 ;0=1,1=0.0000
+PRP Mfr_Name 'Yageo'
+PRP RefDes ''
+PRP Type ''
+PRP Value '100nF'
+TOP 0 99.187 94.3229 270 N 118 86 1
+TOP 1 99.187 95.9739 270 N 109 13 2
+#
+# CMP 37
+CMP 11 99.949 89.6874 270 N C5 CC0603KRX7R7BB104 ;0=1,1=0.0000
+PRP Mfr_Name 'Yageo'
+PRP RefDes ''
+PRP Type ''
+PRP Value '100nF'
+TOP 0 99.949 88.8619 270 N 118 83 1
+TOP 1 99.949 90.5129 270 N 106 2 2
+#
+# CMP 38
+CMP 11 98.044 95.1484 270 N C4 CC0603KRX7R7BB104 ;0=1,1=0.0000
+PRP Mfr_Name 'Yageo'
+PRP RefDes ''
+PRP Type ''
+PRP Value '100nF'
+TOP 0 98.044 94.3229 270 N 118 84 1
+TOP 1 98.044 95.9739 270 N 106 1 2
+#

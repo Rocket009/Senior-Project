@@ -1,0 +1,60 @@
+Add Pin To Net: Unknown Pin: Pin J1-A1-B12
+Add Pin To Net: Unknown Pin: Pin J1-A4-B9
+Add Pin To Net: Unknown Pin: Pin J1-B1-A12
+Add Pin To Net: Unknown Pin: Pin J1-B4-A9
+Add Pin To Net: Unknown Pin: Pin J5-1
+Add Pin To Net: Unknown Pin: Pin J5-2
+Add Pin To Net: Unknown Pin: Pin J5-3
+Add Pin To Net: Unknown Pin: Pin J5-4
+Add Pin To Net: Unknown Pin: Pin J9-1
+Add Pin To Net: Unknown Pin: Pin J9-2
+Add Pin To Net: Unknown Pin: Pin J9-3
+Add Pin To Net: Unknown Pin: Pin J9-4
+Add Pin To Net: Unknown Pin: Pin J10-1
+Add Pin To Net: Unknown Pin: Pin J10-2
+Add Pin To Net: Unknown Pin: Pin J10-3
+Add Pin To Net: Unknown Pin: Pin J10-4
+Add Pin To Net: Unknown Pin: Pin J11-1
+Add Pin To Net: Unknown Pin: Pin J11-2
+Add Pin To Net: Unknown Pin: Pin J11-3
+Add Pin To Net: Unknown Pin: Pin J11-4
+Add Pin To Net: Unknown Pin: Pin J12-1
+Add Pin To Net: Unknown Pin: Pin J12-2
+Add Pin To Net: Unknown Pin: Pin J12-3
+Add Pin To Net: Unknown Pin: Pin J12-4
+Added Pin To Net: NetName=USB_D- Pin=U5-9
+Added Pin To Net: NetName=USB_D+ Pin=U5-10
+Add Pin To Net: Unknown Pin: Pin U-1
+Add Pin To Net: Unknown Pin: Pin U-2
+Add Pin To Net: Unknown Pin: Pin U-3
+Add Pin To Net: Unknown Pin: Pin U-4
+Add Pin To Net: Unknown Pin: Pin U-5
+Add Pin To Net: Unknown Pin: Pin U-6
+Add Pin To Net: Unknown Pin: Pin U-7
+Add Pin To Net: Unknown Pin: Pin U-8
+Add Pin To Net: Unknown Pin: Pin U-9
+Add Pin To Net: Unknown Pin: Pin U-10
+Add Pin To Net: Unknown Pin: Pin U-11
+Add Pin To Net: Unknown Pin: Pin U-12
+Add Pin To Net: Unknown Pin: Pin U-13
+Add Pin To Net: Unknown Pin: Pin U-14
+Add Pin To Net: Unknown Pin: Pin U-15
+Add Pin To Net: Unknown Pin: Pin U-16
+Add Pin To Net: Unknown Pin: Pin U-17
+Add Pin To Net: Unknown Pin: Pin U-18
+Add Pin To Net: Unknown Pin: Pin U-19
+Add Pin To Net: Unknown Pin: Pin U-20
+Add Pin To Net: Unknown Pin: Pin U-21
+Add Pin To Net: Unknown Pin: Pin U-22
+Add Pin To Net: Unknown Pin: Pin U-23
+Add Pin To Net: Unknown Pin: Pin U-24
+Add Pin To Net: Unknown Pin: Pin U-25
+Add Pin To Net: Unknown Pin: Pin U-26
+Add Pin To Net: Unknown Pin: Pin U-27
+Add Pin To Net: Unknown Pin: Pin U-28
+Add Class Member: Failed to add class member : Component J5 I2C_BUS_PINS
+Add Class Member: Failed to add class member : Component J9 I2C_BUS_PINS
+Add Class Member: Failed to add class member : Component J10 I2C_BUS_PINS
+Add Class Member: Failed to add class member : Component J11 I2C_BUS_PINS
+Add Class Member: Failed to add class member : Component J12 I2C_BUS_PINS
+Add Class Member: Failed to add class member : Component U HT16K33

@@ -1,0 +1,354 @@
+Removed Member From Class: ClassName=RMP_SLIDER_MODULE Member=*
+Removed Member From Class: ClassName=RMP_SLIDER_MODULE Member=U?
+Change component parameters: Designator = "C?" ("C?"); Footprint = "CAP_CL21_SAM-M"; UniqueID = "\TODLZSOO" ("\TODLZSOO")
+Change component parameters (AddParameter): Name = "Value"; Value = "10 uF"; VariantName = "[No Variations]"
+Added Component: Designator=B?(DIPS750W75P254L2540H825Q20N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.sunledusa.com/products/spec/XGCBDX10D.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "8.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "SunLED"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "XGCBDX10D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=B?(DIPS750W75P254L2540H825Q20N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.sunledusa.com/products/spec/XGCBDX10D.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "8.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "SunLED"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "XGCBDX10D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=B?(DIPS750W75P254L2540H825Q20N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.sunledusa.com/products/spec/XGCBDX10D.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "8.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "SunLED"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "XGCBDX10D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=B?(DIPS750W75P254L2540H825Q20N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.sunledusa.com/products/spec/XGCBDX10D.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "8.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "SunLED"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "XGCBDX10D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=B?(DIPS750W75P254L2540H825Q20N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.sunledusa.com/products/spec/XGCBDX10D.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "8.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "SunLED"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "XGCBDX10D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=B?(DIPS750W75P254L2540H825Q20N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.sunledusa.com/products/spec/XGCBDX10D.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "8.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "SunLED"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "XGCBDX10D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=B?(DIPS750W75P254L2540H825Q20N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.sunledusa.com/products/spec/XGCBDX10D.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "8.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "SunLED"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "XGCBDX10D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=B?(DIPS750W75P254L2540H825Q20N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.sunledusa.com/products/spec/XGCBDX10D.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "8.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "SunLED"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "XGCBDX10D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=B?(DIPS750W75P254L2540H825Q20N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.sunledusa.com/products/spec/XGCBDX10D.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "8.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "SunLED"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "XGCBDX10D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=B?(DIPS750W75P254L2540H825Q20N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.sunledusa.com/products/spec/XGCBDX10D.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "8.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "SunLED"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "XGCBDX10D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C?(CAP_CL21_SAM-M)
+Add component (AddParameter): Name = "Value"; Value = "10 uF"; VariantName = "[No Variations]"
+Added Component: Designator=C?(CAP_CL21_SAM-M)
+Add component (AddParameter): Name = "Value"; Value = "10 uF"; VariantName = "[No Variations]"
+Added Component: Designator=CR?(CR_SOD323_MCC-M)
+Add component (AddParameter): Name = "Mfr_Name"; Value = "MCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R?(STA_RNCP0805_STP-M)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RNCP0805FTD10K0CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R?(STA_RNCP0805_STP-M - duplicate)
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Stackpole International"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "40.2k Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R?(STA_RNCP0805_STP-M)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "RNCP0805FTD10K0CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R?(STA_RNCP0805_STP-M - duplicate)
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Stackpole International"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "40.2k Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R?(STA_RNCP0805_STP-M - duplicate)
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Stackpole International"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "40.2k Ohm"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=5V Pin=C?-2
+Added Pin To Net: NetName=5V Pin=C?-2
+Added Pin To Net: NetName=5V Pin=C?-2
+Added Pin To Net: NetName=5V Pin=R?-2
+Added Pin To Net: NetName=5V Pin=R?-2
+Added Net: Name=5V
+Added Pin To Net: NetName=A0 Pin=B?-3
+Added Pin To Net: NetName=A0 Pin=B?-3
+Added Pin To Net: NetName=A0 Pin=B?-3
+Added Pin To Net: NetName=A0 Pin=B?-3
+Added Pin To Net: NetName=A0 Pin=B?-3
+Added Pin To Net: NetName=A0 Pin=B?-3
+Added Pin To Net: NetName=A0 Pin=B?-3
+Added Pin To Net: NetName=A0 Pin=B?-3
+Added Pin To Net: NetName=A0 Pin=R?-2
+Added Net: Name=A0
+Added Pin To Net: NetName=A1 Pin=B?-2
+Added Pin To Net: NetName=A1 Pin=B?-2
+Added Pin To Net: NetName=A1 Pin=B?-2
+Added Pin To Net: NetName=A1 Pin=B?-2
+Added Pin To Net: NetName=A1 Pin=B?-2
+Added Pin To Net: NetName=A1 Pin=B?-2
+Added Pin To Net: NetName=A1 Pin=B?-2
+Added Pin To Net: NetName=A1 Pin=B?-2
+Added Pin To Net: NetName=A1 Pin=R?-2
+Added Net: Name=A1
+Added Pin To Net: NetName=A2 Pin=B?-1
+Added Pin To Net: NetName=A2 Pin=B?-1
+Added Pin To Net: NetName=A2 Pin=B?-1
+Added Pin To Net: NetName=A2 Pin=B?-1
+Added Pin To Net: NetName=A2 Pin=B?-1
+Added Pin To Net: NetName=A2 Pin=B?-1
+Added Pin To Net: NetName=A2 Pin=B?-1
+Added Pin To Net: NetName=A2 Pin=B?-1
+Added Pin To Net: NetName=A2 Pin=R?-2
+Added Net: Name=A2
+Added Pin To Net: NetName=COM0 Pin=B?-11
+Added Pin To Net: NetName=COM0 Pin=B?-12
+Added Pin To Net: NetName=COM0 Pin=B?-13
+Added Pin To Net: NetName=COM0 Pin=B?-14
+Added Pin To Net: NetName=COM0 Pin=B?-15
+Added Pin To Net: NetName=COM0 Pin=B?-16
+Added Pin To Net: NetName=COM0 Pin=B?-17
+Added Pin To Net: NetName=COM0 Pin=B?-18
+Added Pin To Net: NetName=COM0 Pin=B?-19
+Added Pin To Net: NetName=COM0 Pin=B?-20
+Added Pin To Net: NetName=COM0 Pin=CR?-2
+Added Net: Name=COM0
+Added Pin To Net: NetName=COM1 Pin=B?-11
+Added Pin To Net: NetName=COM1 Pin=B?-12
+Added Pin To Net: NetName=COM1 Pin=B?-13
+Added Pin To Net: NetName=COM1 Pin=B?-14
+Added Pin To Net: NetName=COM1 Pin=B?-15
+Added Pin To Net: NetName=COM1 Pin=B?-16
+Added Pin To Net: NetName=COM1 Pin=B?-17
+Added Pin To Net: NetName=COM1 Pin=B?-18
+Added Pin To Net: NetName=COM1 Pin=B?-19
+Added Pin To Net: NetName=COM1 Pin=B?-20
+Added Net: Name=COM1
+Added Pin To Net: NetName=COM2 Pin=B?-11
+Added Pin To Net: NetName=COM2 Pin=B?-12
+Added Pin To Net: NetName=COM2 Pin=B?-13
+Added Pin To Net: NetName=COM2 Pin=B?-14
+Added Pin To Net: NetName=COM2 Pin=B?-15
+Added Pin To Net: NetName=COM2 Pin=B?-16
+Added Pin To Net: NetName=COM2 Pin=B?-17
+Added Pin To Net: NetName=COM2 Pin=B?-18
+Added Pin To Net: NetName=COM2 Pin=B?-19
+Added Pin To Net: NetName=COM2 Pin=B?-20
+Added Net: Name=COM2
+Added Pin To Net: NetName=COM3 Pin=B?-11
+Added Pin To Net: NetName=COM3 Pin=B?-12
+Added Pin To Net: NetName=COM3 Pin=B?-13
+Added Pin To Net: NetName=COM3 Pin=B?-14
+Added Pin To Net: NetName=COM3 Pin=B?-15
+Added Pin To Net: NetName=COM3 Pin=B?-16
+Added Pin To Net: NetName=COM3 Pin=B?-17
+Added Pin To Net: NetName=COM3 Pin=B?-18
+Added Pin To Net: NetName=COM3 Pin=B?-19
+Added Pin To Net: NetName=COM3 Pin=B?-20
+Added Net: Name=COM3
+Added Pin To Net: NetName=COM4 Pin=B?-11
+Added Pin To Net: NetName=COM4 Pin=B?-12
+Added Pin To Net: NetName=COM4 Pin=B?-13
+Added Pin To Net: NetName=COM4 Pin=B?-14
+Added Pin To Net: NetName=COM4 Pin=B?-15
+Added Pin To Net: NetName=COM4 Pin=B?-16
+Added Pin To Net: NetName=COM4 Pin=B?-17
+Added Pin To Net: NetName=COM4 Pin=B?-18
+Added Pin To Net: NetName=COM4 Pin=B?-19
+Added Pin To Net: NetName=COM4 Pin=B?-20
+Added Net: Name=COM4
+Added Pin To Net: NetName=COM5 Pin=B?-11
+Added Pin To Net: NetName=COM5 Pin=B?-12
+Added Pin To Net: NetName=COM5 Pin=B?-13
+Added Pin To Net: NetName=COM5 Pin=B?-14
+Added Pin To Net: NetName=COM5 Pin=B?-15
+Added Pin To Net: NetName=COM5 Pin=B?-16
+Added Pin To Net: NetName=COM5 Pin=B?-17
+Added Pin To Net: NetName=COM5 Pin=B?-18
+Added Pin To Net: NetName=COM5 Pin=B?-19
+Added Pin To Net: NetName=COM5 Pin=B?-20
+Added Net: Name=COM5
+Added Pin To Net: NetName=COM6 Pin=B?-11
+Added Pin To Net: NetName=COM6 Pin=B?-12
+Added Pin To Net: NetName=COM6 Pin=B?-13
+Added Pin To Net: NetName=COM6 Pin=B?-14
+Added Pin To Net: NetName=COM6 Pin=B?-15
+Added Pin To Net: NetName=COM6 Pin=B?-16
+Added Pin To Net: NetName=COM6 Pin=B?-17
+Added Pin To Net: NetName=COM6 Pin=B?-18
+Added Pin To Net: NetName=COM6 Pin=B?-19
+Added Pin To Net: NetName=COM6 Pin=B?-20
+Added Net: Name=COM6
+Added Pin To Net: NetName=COM7 Pin=B?-11
+Added Pin To Net: NetName=COM7 Pin=B?-12
+Added Pin To Net: NetName=COM7 Pin=B?-13
+Added Pin To Net: NetName=COM7 Pin=B?-14
+Added Pin To Net: NetName=COM7 Pin=B?-15
+Added Pin To Net: NetName=COM7 Pin=B?-16
+Added Pin To Net: NetName=COM7 Pin=B?-17
+Added Pin To Net: NetName=COM7 Pin=B?-18
+Added Pin To Net: NetName=COM7 Pin=B?-19
+Added Pin To Net: NetName=COM7 Pin=B?-20
+Added Net: Name=COM7
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Net: Name=GND
+Added Pin To Net: NetName=NetCR?_1 Pin=CR?-1
+Added Pin To Net: NetName=NetCR?_1 Pin=R?-1
+Added Pin To Net: NetName=NetCR?_1 Pin=R?-1
+Added Pin To Net: NetName=NetCR?_1 Pin=R?-1
+Added Net: Name=NetCR?_1
+Added Pin To Net: NetName=ROW3 Pin=B?-4
+Added Pin To Net: NetName=ROW3 Pin=B?-4
+Added Pin To Net: NetName=ROW3 Pin=B?-4
+Added Pin To Net: NetName=ROW3 Pin=B?-4
+Added Pin To Net: NetName=ROW3 Pin=B?-4
+Added Pin To Net: NetName=ROW3 Pin=B?-4
+Added Pin To Net: NetName=ROW3 Pin=B?-4
+Added Pin To Net: NetName=ROW3 Pin=B?-4
+Added Net: Name=ROW3
+Added Pin To Net: NetName=ROW4 Pin=B?-5
+Added Pin To Net: NetName=ROW4 Pin=B?-5
+Added Pin To Net: NetName=ROW4 Pin=B?-5
+Added Pin To Net: NetName=ROW4 Pin=B?-5
+Added Pin To Net: NetName=ROW4 Pin=B?-5
+Added Pin To Net: NetName=ROW4 Pin=B?-5
+Added Pin To Net: NetName=ROW4 Pin=B?-5
+Added Pin To Net: NetName=ROW4 Pin=B?-5
+Added Net: Name=ROW4
+Added Pin To Net: NetName=ROW5 Pin=B?-6
+Added Pin To Net: NetName=ROW5 Pin=B?-6
+Added Pin To Net: NetName=ROW5 Pin=B?-6
+Added Pin To Net: NetName=ROW5 Pin=B?-6
+Added Pin To Net: NetName=ROW5 Pin=B?-6
+Added Pin To Net: NetName=ROW5 Pin=B?-6
+Added Pin To Net: NetName=ROW5 Pin=B?-6
+Added Pin To Net: NetName=ROW5 Pin=B?-6
+Added Pin To Net: NetName=ROW5 Pin=B?-7
+Added Pin To Net: NetName=ROW5 Pin=B?-7
+Added Pin To Net: NetName=ROW5 Pin=B?-7
+Added Pin To Net: NetName=ROW5 Pin=B?-7
+Added Pin To Net: NetName=ROW5 Pin=B?-7
+Added Pin To Net: NetName=ROW5 Pin=B?-7
+Added Pin To Net: NetName=ROW5 Pin=B?-7
+Added Pin To Net: NetName=ROW5 Pin=B?-7
+Added Net: Name=ROW5
+Added Pin To Net: NetName=ROW6 Pin=B?-8
+Added Pin To Net: NetName=ROW6 Pin=B?-8
+Added Pin To Net: NetName=ROW6 Pin=B?-8
+Added Pin To Net: NetName=ROW6 Pin=B?-8
+Added Pin To Net: NetName=ROW6 Pin=B?-8
+Added Pin To Net: NetName=ROW6 Pin=B?-8
+Added Pin To Net: NetName=ROW6 Pin=B?-8
+Added Pin To Net: NetName=ROW6 Pin=B?-8
+Added Net: Name=ROW6
+Added Pin To Net: NetName=ROW7 Pin=B?-9
+Added Pin To Net: NetName=ROW7 Pin=B?-9
+Added Pin To Net: NetName=ROW7 Pin=B?-9
+Added Pin To Net: NetName=ROW7 Pin=B?-9
+Added Pin To Net: NetName=ROW7 Pin=B?-9
+Added Pin To Net: NetName=ROW7 Pin=B?-9
+Added Pin To Net: NetName=ROW7 Pin=B?-9
+Added Pin To Net: NetName=ROW7 Pin=B?-9
+Added Net: Name=ROW7
+Added Pin To Net: NetName=ROW8 Pin=B?-10
+Added Pin To Net: NetName=ROW8 Pin=B?-10
+Added Pin To Net: NetName=ROW8 Pin=B?-10
+Added Pin To Net: NetName=ROW8 Pin=B?-10
+Added Pin To Net: NetName=ROW8 Pin=B?-10
+Added Pin To Net: NetName=ROW8 Pin=B?-10
+Added Pin To Net: NetName=ROW8 Pin=B?-10
+Added Pin To Net: NetName=ROW8 Pin=B?-10
+Added Net: Name=ROW8
+Added Pin To Net: NetName=SCL Pin=R?-1
+Added Net: Name=SCL
+Added Pin To Net: NetName=SDA Pin=R?-1
+Added Net: Name=SDA
+Change Class Name : Old Net Name=RMP_SLIDER_MODULE New Net Name=RMP_LED_MODULE
+Added Class: Name=RMP_SLIDER_MODULE
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component B? XGCBDX10D
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component B? XGCBDX10D
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component B? XGCBDX10D
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component B? XGCBDX10D
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component B? XGCBDX10D
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component B? XGCBDX10D
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component B? XGCBDX10D
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component B? XGCBDX10D
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component B? XGCBDX10D
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component C? CL21A106KOQNNNE
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component C? CL21A106KOQNNNE
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component C? CL21A106KOQNNNE
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component CR? 1N4148WX-TP
+Added Member To Class: ClassName=RMP_MAIN_HFB Member=Component J? PJ-002B
+Added Member To Class: ClassName=RMP_MAIN Member=Component J? 12402012E212A
+Added Member To Class: ClassName=RMP_MAIN Member=Component R? RT0805FRE075K1L
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component R? RNCP0805FTD10K0
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component R? RNCP0805FTD40K2
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component R? RNCP0805FTD40K2
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component R? RNCP0805FTD40K2
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component R? RNCP0805FTD10K0
+Added Member To Class: ClassName=RMP_MAIN Member=Component U? W25Q128JVSIQ
+Added Member To Class: ClassName=RMP_MAIN Member=Component U? SC091413
+Added Member To Class: ClassName=RMP_MAIN Member=Component U? NCP1117LPST33T3G
+Add Class Member: Failed to add class member : Component U HT16K33
+Added Rule: Name=Schematic Supply Nets
+Added Rule: Name=Schematic Supply Nets_1

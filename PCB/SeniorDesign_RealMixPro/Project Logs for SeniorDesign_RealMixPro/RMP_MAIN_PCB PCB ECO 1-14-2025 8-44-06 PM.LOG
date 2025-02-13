@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=3.3V Pin=B11-2
+Removed Pin From Net: NetName=3.3V Pin=TP11-1
+Removed Pin From Net: NetName=3.3V Pin=U8-1
+Added Pin To Net: NetName=NetB11_2 Pin=B11-2
+Added Pin To Net: NetName=NetB11_2 Pin=TP11-1
+Added Pin To Net: NetName=NetB11_2 Pin=U8-1
+Added Net: Name=NetB11_2

@@ -1,0 +1,75 @@
+Removed Pin From Net: NetName=B2 Pin=U?-1
+Removed Pin From Net: NetName=3.3V Pin=U?-3
+Removed Pin From Net: NetName=3.3V Pin=U?-6
+Removed Pin From Net: NetName=B1 Pin=U?-8
+Change Component Comment : Designator=U? Old Comment=TXS0102DCTR New Comment=SC091413
+Add Pin To Net: Unknown Pin: Pin J?-1
+Add Pin To Net: Unknown Pin: Pin J?-2
+Add Pin To Net: Unknown Pin: Pin J?-3
+Add Pin To Net: Unknown Pin: Pin J?-4
+Add Pin To Net: Unknown Pin: Pin U-1
+Add Pin To Net: Unknown Pin: Pin U-2
+Add Pin To Net: Unknown Pin: Pin U-3
+Add Pin To Net: Unknown Pin: Pin U-4
+Add Pin To Net: Unknown Pin: Pin U-5
+Add Pin To Net: Unknown Pin: Pin U-6
+Add Pin To Net: Unknown Pin: Pin U-7
+Add Pin To Net: Unknown Pin: Pin U-8
+Add Pin To Net: Unknown Pin: Pin U-9
+Add Pin To Net: Unknown Pin: Pin U-16
+Add Pin To Net: Unknown Pin: Pin U-17
+Add Pin To Net: Unknown Pin: Pin U-18
+Add Pin To Net: Unknown Pin: Pin U-19
+Add Pin To Net: Unknown Pin: Pin U-20
+Add Pin To Net: Unknown Pin: Pin U-21
+Add Pin To Net: Unknown Pin: Pin U-22
+Add Pin To Net: Unknown Pin: Pin U-23
+Add Pin To Net: Unknown Pin: Pin U-24
+Add Pin To Net: Unknown Pin: Pin U-25
+Add Pin To Net: Unknown Pin: Pin U-26
+Add Pin To Net: Unknown Pin: Pin U-27
+Add Pin To Net: Unknown Pin: Pin U-28
+Added Pin To Net: NetName=B2 Pin=U?-1
+Added Pin To Net: NetName=3.3V Pin=U?-3
+Added Pin To Net: NetName=3.3V Pin=U?-6
+Added Pin To Net: NetName=GND Pin=U?-6
+Added Pin To Net: NetName=5V Pin=U?-7
+Added Pin To Net: NetName=B1 Pin=U?-8
+Added Pin To Net: NetName=GND Pin=U?-8
+Add Net: Net with name "NetB?_2" already exists
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component B? XGCBDX10D
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component B? XGCBDX10D
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component B? XGCBDX10D
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component B? XGCBDX10D
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component B? XGCBDX10D
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component B? XGCBDX10D
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component B? XGCBDX10D
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component B? XGCBDX10D
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component B? XGCBDX10D
+Added Member To Class: ClassName=RMP_SLIDER_MODULE Member=Component B? PTA3043-2010CIB103
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component C? CL21B105KAFNNNE
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component C? CL21A106KOQNNNE
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component C? CL21A106KOQNNNE
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component C? CL21A106KOQNNNE
+Added Member To Class: ClassName=RMP_SLIDER_MODULE Member=Component C? CL21B105KAFNNNE
+Added Member To Class: ClassName=RMP_MAIN_HFB Member=Component J? PJ-002B
+Added Member To Class: ClassName=RMP_MAIN Member=Component J? 12402012E212A
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component R? RNCP0805FTD10K0
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component R? RNCP0805FTD40K2
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component R? RNCP0805FTD10K0
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component R? RNCP0805FTD40K2
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component R? RNCP0805FTD10K0
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component R? RT0805FRE134K7L
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component R? RNCP0805FTD40K2
+Added Member To Class: ClassName=RMP_MAIN Member=Component R? RT0805FRE075K1L
+Added Member To Class: ClassName=RMP_SLIDER_MODULE Member=Component R? RT0805FRE134K7L
+Added Member To Class: ClassName=RMP_SLIDER_MODULE Member=Component R? RT0805FRE134K7L
+Added Member To Class: ClassName=RMP_SLIDER_MODULE Member=Component R? RT0805FRE134K7L
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component U? TXS0102DCTR
+Added Member To Class: ClassName=RMP_MAIN_HFB Member=Component U? DRV8313PWPR
+Added Member To Class: ClassName=RMP_MAIN Member=Component U? W25Q128JVSIQ
+Added Member To Class: ClassName=RMP_MAIN Member=Component U? SC091413
+Added Member To Class: ClassName=RMP_MAIN Member=Component U? NCP1117LPST33T3G
+Added Member To Class: ClassName=RMP_MAIN Member=Component U? PTS636SM43SMTR LFS
+Added Member To Class: ClassName=RMP_SLIDER_MODULE Member=Component U? MCP3426A0T-EMS
+Add Class Member: Failed to add class member : Component U HT16K33

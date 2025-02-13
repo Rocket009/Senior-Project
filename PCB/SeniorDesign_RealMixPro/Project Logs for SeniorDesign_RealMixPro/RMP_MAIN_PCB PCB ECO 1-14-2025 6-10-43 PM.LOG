@@ -1,0 +1,19 @@
+Add Pin To Net: Unknown Pin: Pin J1-A1-B12
+Add Pin To Net: Unknown Pin: Pin J1-A4-B9
+Add Pin To Net: Unknown Pin: Pin J1-B1-A12
+Add Pin To Net: Unknown Pin: Pin J1-B4-A9
+Added Pin To Net: NetName=VBUS_5V Pin=TP1-1
+Added Pin To Net: NetName=3.3V Pin=TP2-1
+Added Pin To Net: NetName=USB_D- Pin=TP3-1
+Added Pin To Net: NetName=USB_D+ Pin=TP4-1
+Added Pin To Net: NetName=NetC45_2 Pin=TP5-1
+Added Pin To Net: NetName=Motor_7.4V Pin=TP6-1
+Added Pin To Net: NetName=VBUS_5V Pin=TP7-1
+Added Pin To Net: NetName=SCL Pin=TP8-1
+Added Pin To Net: NetName=SDA Pin=TP9-1
+Added Pin To Net: NetName=3.3V Pin=TP10-1
+Added Pin To Net: NetName=3.3V Pin=TP11-1
+Added Pin To Net: NetName=NetB12_2 Pin=TP12-1
+Added Pin To Net: NetName=VBUS_5V Pin=TP13-1
+Added Pin To Net: NetName=SCL Pin=TP14-1
+Added Pin To Net: NetName=SDA Pin=TP15-1

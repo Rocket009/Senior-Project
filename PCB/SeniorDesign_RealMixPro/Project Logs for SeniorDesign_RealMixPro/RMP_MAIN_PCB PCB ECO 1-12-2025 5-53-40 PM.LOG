@@ -1,0 +1,65 @@
+Change Component Designator: OldDesignator=* NewDesignator=J13
+Added Component: Designator=J5(4 PIN HEADER)
+Added Component: Designator=J9(4 PIN HEADER)
+Added Component: Designator=J10(4 PIN HEADER)
+Added Component: Designator=J11(4 PIN HEADER)
+Added Component: Designator=J12(4 PIN HEADER)
+Added Component: Designator=U12(PWP0028F_M)
+Add Pin To Net: Unknown Pin: Pin J1-A1-B12
+Add Pin To Net: Unknown Pin: Pin J1-A4-B9
+Add Pin To Net: Unknown Pin: Pin J1-B1-A12
+Add Pin To Net: Unknown Pin: Pin J1-B4-A9
+Added Pin To Net: NetName=GND Pin=J5-1
+Added Pin To Net: NetName=3.3V Pin=J5-2
+Added Pin To Net: NetName=SCL Pin=J5-3
+Added Pin To Net: NetName=SDA Pin=J5-4
+Added Pin To Net: NetName=GND Pin=J9-1
+Added Pin To Net: NetName=VBUS_5V Pin=J9-2
+Added Pin To Net: NetName=SCL Pin=J9-3
+Added Pin To Net: NetName=SDA Pin=J9-4
+Added Pin To Net: NetName=GND Pin=J10-1
+Added Pin To Net: NetName=VBUS_5V Pin=J10-2
+Added Pin To Net: NetName=SCL Pin=J10-3
+Added Pin To Net: NetName=SDA Pin=J10-4
+Added Pin To Net: NetName=GND Pin=J11-1
+Added Pin To Net: NetName=VBUS_5V Pin=J11-2
+Added Pin To Net: NetName=SCL Pin=J11-3
+Added Pin To Net: NetName=SDA Pin=J11-4
+Added Pin To Net: NetName=GND Pin=J12-1
+Added Pin To Net: NetName=VBUS_5V Pin=J12-2
+Added Pin To Net: NetName=SCL Pin=J12-3
+Added Pin To Net: NetName=SDA Pin=J12-4
+Added Pin To Net: NetName=GND Pin=U12-1
+Added Pin To Net: NetName=COM0 Pin=U12-2
+Added Pin To Net: NetName=COM1 Pin=U12-3
+Added Pin To Net: NetName=COM2 Pin=U12-4
+Added Pin To Net: NetName=COM3 Pin=U12-5
+Added Pin To Net: NetName=COM4 Pin=U12-6
+Added Pin To Net: NetName=COM5 Pin=U12-7
+Added Pin To Net: NetName=COM6 Pin=U12-8
+Added Pin To Net: NetName=COM7 Pin=U12-9
+Added Pin To Net: NetName=ROW15 Pin=U12-10
+Added Pin To Net: NetName=ROW14 Pin=U12-11
+Added Pin To Net: NetName=ROW13 Pin=U12-12
+Added Pin To Net: NetName=ROW12 Pin=U12-13
+Added Pin To Net: NetName=ROW11 Pin=U12-14
+Added Pin To Net: NetName=ROW10 Pin=U12-15
+Added Pin To Net: NetName=ROW9 Pin=U12-16
+Added Pin To Net: NetName=ROW8 Pin=U12-17
+Added Pin To Net: NetName=ROW7 Pin=U12-18
+Added Pin To Net: NetName=ROW6 Pin=U12-19
+Added Pin To Net: NetName=ROW5 Pin=U12-20
+Added Pin To Net: NetName=ROW4 Pin=U12-21
+Added Pin To Net: NetName=ROW3 Pin=U12-22
+Added Pin To Net: NetName=A0 Pin=U12-23
+Added Pin To Net: NetName=A1 Pin=U12-24
+Added Pin To Net: NetName=A2 Pin=U12-25
+Added Pin To Net: NetName=B1 Pin=U12-26
+Added Pin To Net: NetName=B2 Pin=U12-27
+Added Pin To Net: NetName=5V Pin=U12-28
+Added Member To Class: ClassName=RMP_SLIDER_MODULE Member=Component J5 I2C_BUS_PINS
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component J9 I2C_BUS_PINS
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component J10 I2C_BUS_PINS
+Added Member To Class: ClassName=RMP_SLIDER_MODULE Member=Component J11 I2C_BUS_PINS
+Added Member To Class: ClassName=RMP_SLIDER_MODULE Member=Component J12 I2C_BUS_PINS
+Added Member To Class: ClassName=RMP_LED_MODULE Member=Component U12 HT16K33

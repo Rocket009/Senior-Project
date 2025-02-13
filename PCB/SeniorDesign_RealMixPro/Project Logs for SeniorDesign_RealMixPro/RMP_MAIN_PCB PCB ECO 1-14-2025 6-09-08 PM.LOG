@@ -1,0 +1,61 @@
+Added Component: Designator=J14(4 PIN HEADER)
+Added Component: Designator=J15(4 PIN HEADER)
+Added Component: Designator=TP1(Testpoint)
+Added Component: Designator=TP2(Testpoint)
+Added Component: Designator=TP3(Testpoint)
+Added Component: Designator=TP4(Testpoint)
+Added Component: Designator=TP5(Testpoint)
+Added Component: Designator=TP6(Testpoint)
+Added Component: Designator=TP7(Testpoint)
+Added Component: Designator=TP8(Testpoint)
+Added Component: Designator=TP9(Testpoint)
+Added Component: Designator=TP10(Testpoint)
+Added Component: Designator=TP11(Testpoint)
+Added Component: Designator=TP12(Testpoint)
+Added Component: Designator=TP13(Testpoint)
+Added Component: Designator=TP14(Testpoint)
+Added Component: Designator=TP15(Testpoint)
+Add Pin To Net: Unknown Pin: Pin J1-A1-B12
+Add Pin To Net: Unknown Pin: Pin J1-A4-B9
+Add Pin To Net: Unknown Pin: Pin J1-B1-A12
+Add Pin To Net: Unknown Pin: Pin J1-B4-A9
+Added Pin To Net: NetName=GND Pin=J14-1
+Added Pin To Net: NetName=VBUS_5V Pin=J14-2
+Added Pin To Net: NetName=SCL Pin=J14-3
+Added Pin To Net: NetName=SDA Pin=J14-4
+Added Pin To Net: NetName=GND Pin=J15-1
+Added Pin To Net: NetName=VBUS_5V Pin=J15-2
+Added Pin To Net: NetName=SCL Pin=J15-3
+Added Pin To Net: NetName=SDA Pin=J15-4
+Add Pin To Net: Unknown Pin: Pin TP1-1
+Add Pin To Net: Unknown Pin: Pin TP2-1
+Add Pin To Net: Unknown Pin: Pin TP3-1
+Add Pin To Net: Unknown Pin: Pin TP4-1
+Add Pin To Net: Unknown Pin: Pin TP5-1
+Add Pin To Net: Unknown Pin: Pin TP6-1
+Add Pin To Net: Unknown Pin: Pin TP7-1
+Add Pin To Net: Unknown Pin: Pin TP8-1
+Add Pin To Net: Unknown Pin: Pin TP9-1
+Add Pin To Net: Unknown Pin: Pin TP10-1
+Add Pin To Net: Unknown Pin: Pin TP11-1
+Add Pin To Net: Unknown Pin: Pin TP12-1
+Add Pin To Net: Unknown Pin: Pin TP13-1
+Add Pin To Net: Unknown Pin: Pin TP14-1
+Add Pin To Net: Unknown Pin: Pin TP15-1
+Added Member To Class: ClassName=RMP_MAIN_HFB Member=Component J14 I2C_BUS_PINS
+Added Member To Class: ClassName=RMP_MAIN_HFB Member=Component J15 I2C_BUS_PINS
+Added Member To Class: ClassName=RMP_MAIN Member=Component TP1 TestPoint
+Added Member To Class: ClassName=RMP_MAIN Member=Component TP2 TestPoint
+Added Member To Class: ClassName=RMP_MAIN Member=Component TP3 TestPoint
+Added Member To Class: ClassName=RMP_MAIN Member=Component TP4 TestPoint
+Added Member To Class: ClassName=RMP_MAIN_HFB Member=Component TP5 TestPoint
+Added Member To Class: ClassName=RMP_MAIN_HFB Member=Component TP6 TestPoint
+Added Member To Class: ClassName=RMP_MAIN_HFB Member=Component TP7 TestPoint
+Added Member To Class: ClassName=RMP_MAIN_HFB Member=Component TP8 TestPoint
+Added Member To Class: ClassName=RMP_MAIN_HFB Member=Component TP9 TestPoint
+Added Member To Class: ClassName=RMP_SLIDER_MODULE Member=Component TP10 TestPoint
+Added Member To Class: ClassName=RMP_SLIDER_MODULE Member=Component TP11 TestPoint
+Added Member To Class: ClassName=RMP_SLIDER_MODULE Member=Component TP12 TestPoint
+Added Member To Class: ClassName=RMP_SLIDER_MODULE Member=Component TP13 TestPoint
+Added Member To Class: ClassName=RMP_SLIDER_MODULE Member=Component TP14 TestPoint
+Added Member To Class: ClassName=RMP_SLIDER_MODULE Member=Component TP15 TestPoint

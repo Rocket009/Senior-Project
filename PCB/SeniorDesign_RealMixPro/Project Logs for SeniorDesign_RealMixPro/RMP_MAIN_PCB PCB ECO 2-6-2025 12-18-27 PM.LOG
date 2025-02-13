@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=QSPI_SS Pin=TP16-1
+Removed Pin From Net: NetName=QSPI_SD0 Pin=TP17-1
+Removed Pin From Net: NetName=QSPI_SD1 Pin=TP18-1
+Removed Pin From Net: NetName=QSPI_SD2 Pin=TP19-1
+Removed Pin From Net: NetName=QSPI_SCLK Pin=TP20-1
+Removed Pin From Net: NetName=QSPI_SD3 Pin=TP21-1
+Removed Member From Class: ClassName=RMP_MAIN Member=TP16
+Removed Member From Class: ClassName=RMP_MAIN Member=TP17
+Removed Member From Class: ClassName=RMP_MAIN Member=TP18
+Removed Member From Class: ClassName=RMP_MAIN Member=TP19
+Removed Member From Class: ClassName=RMP_MAIN Member=TP20
+Removed Member From Class: ClassName=RMP_MAIN Member=TP21
