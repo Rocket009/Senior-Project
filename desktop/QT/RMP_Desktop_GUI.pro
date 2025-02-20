@@ -16,17 +16,20 @@ SOURCES += \
     audiosessioncontroller.cpp \
     main.cpp \
     mainwindow.cpp \
+    processvolumeslider.cpp \
     serialhandler.cpp \
     settings.cpp
 
 HEADERS += \
     audiosessioncontroller.h \
     mainwindow.h \
+    processvolumeslider.h \
     serialhandler.h \
     settings.h
 
 FORMS += \
     mainwindow.ui \
+    processvolumeslider.ui \
     settings.ui
 
 # Default rules for deployment.

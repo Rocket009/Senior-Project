@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include <QSlider>
 #include <QProgressBar>
+#include "processvolumeslider.h"
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -9,10 +10,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
-    connect(ui->Master_Volume_Sider, &QSlider:: valueChanged, this, &MainWindow::on_verticalSlider_sliderMoved); // Connect to Slider Bar
-
-    connect(ui->Master_Volume_Progress, &QProgressBar::valueChanged, this, &MainWindow::on_progressBar_valueChanged); // Connect progress bar to slider
+    createProcessVolumeWidgets();
 }
 
 MainWindow::~MainWindow()
@@ -20,14 +18,39 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_verticalSlider_sliderMoved(int value)
+void MainWindow::createProcessVolumeWidgets()
 {
-    ui->Master_Volume_Progress->setValue(value);
+    ui->scrollArea->setWidgetResizable(false);
+    QWidget *container = ui->scrollArea->widget();
+    if(!container)
+    {
+        container = new QWidget();
+        ui->scrollArea->setWidget(container);
+    }
+    QHBoxLayout *layout = qobject_cast<QHBoxLayout*>(container->layout());
+    if (!layout) {
+        layout = new QHBoxLayout(container);
+        container->setLayout(layout);
+    }
+    for(int i = 0; i < 10; i++)
+    {
+
+        ProcessVolumeSlider* s = new ProcessVolumeSlider();
+        layout->addWidget(s);
+        s->show();
+        ui->scrollArea->adjustSize();
+        container->adjustSize();
+
+    }
+    layout->setSizeConstraint(QLayout::SetMinimumSize);
+    for(QObject* s : layout->children())
+    {
+        qDebug() << s->objectName();
+    }
+    container->setMinimumSize(container->sizeHint());
+    container->adjustSize();
 }
 
-void MainWindow::on_progressBar_valueChanged(int value) // Update slider bar if progress bar changes
-{
-    ui->Master_Volume_Sider->setValue(value);
-}
+
 
 

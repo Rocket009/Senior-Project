@@ -17,11 +17,9 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-private slots:
-    void on_progressBar_valueChanged(int value);
-    void on_verticalSlider_sliderMoved(int position);
 
 private:
     Ui::MainWindow *ui;
+    void createProcessVolumeWidgets();
 };
 #endif // MAINWINDOW_H
