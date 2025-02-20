@@ -10,6 +10,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    audioController = std::shared_ptr<AudioSessionController>(new AudioSessionController());
     createProcessVolumeWidgets();
 }
 
@@ -32,10 +33,12 @@ void MainWindow::createProcessVolumeWidgets()
         layout = new QHBoxLayout(container);
         container->setLayout(layout);
     }
-    for(int i = 0; i < 10; i++)
+    std::vector<AudioSession> sessions = audioController->getActiveAudioSessions();
+    for(auto &sess : sessions)
     {
 
         ProcessVolumeSlider* s = new ProcessVolumeSlider();
+        s->bindAudioSession(audioController, sess);
         layout->addWidget(s);
         s->show();
         ui->scrollArea->adjustSize();

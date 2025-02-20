@@ -3,6 +3,7 @@
 #include <propvarutil.h>
 #include <Functiondiscoverykeys_devpkey.h>
 #include <Windows.h>
+#include <QFileInfo>
 #include <Psapi.h>
 
 PROPERTYKEY key = { { 0x9F4C2855, 0x9F79, 0x4B39, { 0xA8, 0xD0, 0xE1, 0xD4, 0x62, 0x1E, 0xE8, 0x83 } }, 5 };
@@ -121,7 +122,7 @@ bool AudioSessionController::getAudioSessionControl(DWORD processId, IAudioSessi
     return false;
 }
 
-bool AudioSessionController::setVolumeForProcess(DWORD processId, float volume)
+bool AudioSessionController::setVolumeForProcess(const AudioSession &s, float volume)
 {
     if (volume < 0.0f || volume > 1.0f)
     {
@@ -130,7 +131,7 @@ bool AudioSessionController::setVolumeForProcess(DWORD processId, float volume)
     }
 
     IAudioSessionControl *sessionControl = nullptr;
-    if (!getAudioSessionControl(processId, &sessionControl))
+    if (!getAudioSessionControl(s.processId, &sessionControl))
     {
         qWarning() << "Failed to find audio session for process";
         return false;
@@ -157,10 +158,10 @@ bool AudioSessionController::setVolumeForProcess(DWORD processId, float volume)
     return true;
 }
 
-float AudioSessionController::getVolumeForProcess(DWORD processId)
+float AudioSessionController::getVolumeForProcess(const AudioSession &s)
 {
     IAudioSessionControl *sessionControl = nullptr;
-    if (!getAudioSessionControl(processId, &sessionControl))
+    if (!getAudioSessionControl(s.processId, &sessionControl))
     {
         qWarning() << "Failed to find audio session for process";
         return -1.0f;
@@ -178,10 +179,10 @@ float AudioSessionController::getVolumeForProcess(DWORD processId)
     return volume;
 }
 
-bool AudioSessionController::muteProcess(DWORD processId, bool mute)
+bool AudioSessionController::muteProcess(const AudioSession &s, bool mute)
 {
     IAudioSessionControl *sessionControl = nullptr;
-    if (!getAudioSessionControl(processId, &sessionControl))
+    if (!getAudioSessionControl(s.processId, &sessionControl))
     {
         qWarning() << "Failed to find audio session for process";
         return false;
@@ -208,9 +209,9 @@ bool AudioSessionController::muteProcess(DWORD processId, bool mute)
     return true;
 }
 
-std::vector<AudioSessionInfo> AudioSessionController::getActiveAudioSessions()
+std::vector<AudioSession> AudioSessionController::getActiveAudioSessions()
 {
-    std::vector<AudioSessionInfo> sessions;
+    std::vector<AudioSession> sessions;
 
     IMMDeviceEnumerator *deviceEnumerator = nullptr;
     IMMDevice *device = nullptr;
@@ -293,7 +294,6 @@ std::vector<AudioSessionInfo> AudioSessionController::getActiveAudioSessions()
                 AudioSessionState state;
                 if (SUCCEEDED(sessionControl2->GetState(&state)))
                 {
-                    // 🔥 Allow both Active and Inactive sessions
                     if (state == AudioSessionStateActive || state == AudioSessionStateInactive)
                     {
                         if (SUCCEEDED(sessionControl2->GetProcessId(&sessionPid)) && sessionPid != 0)
@@ -309,7 +309,8 @@ std::vector<AudioSessionInfo> AudioSessionController::getActiveAudioSessions()
                                 DWORD size = MAX_PATH;
                                 if (QueryFullProcessImageNameW(hProcess, 0, processName, &size))
                                 {
-                                    info.friendlyName = QString::fromWCharArray(processName);
+                                    // Get just the base (stem) name of the exe
+                                    info.friendlyName = QFileInfo(QString::fromWCharArray(processName)).baseName();
                                 }
                                 CloseHandle(hProcess);
                             }

@@ -9,12 +9,16 @@
 #include <comdef.h>
 #include <vector>
 
-struct AudioSessionInfo {
+struct AudioSession {
     DWORD processId;
     QString friendlyName;
     QString iconPath;
+};
+
+struct AudioSessionInfo : public AudioSession {
     IMMDevice *device;
 };
+
 
 class AudioSessionController : public QObject
 {
@@ -24,11 +28,11 @@ public:
     explicit AudioSessionController(QObject *parent = nullptr);
     ~AudioSessionController();
 
-    bool setVolumeForProcess(DWORD processId, float volume);  // Volume: 0.0 - 1.0
-    float getVolumeForProcess(DWORD processId);
-    bool muteProcess(DWORD processId, bool mute);
+    bool setVolumeForProcess(const AudioSession &s, float volume);  // Volume: 0.0 - 1.0
+    float getVolumeForProcess(const AudioSession &s);
+    bool muteProcess(const AudioSession &s, bool mute);
 
-    std::vector<AudioSessionInfo> getActiveAudioSessions();  // New method
+    std::vector<AudioSession> getActiveAudioSessions();  // New method
 
 private:
     bool getAudioSessionControl(DWORD processId, IAudioSessionControl **sessionControl);
