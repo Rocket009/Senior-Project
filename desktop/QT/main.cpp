@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     AudioSessionController c;
-    std::vector<AudioSessionInfo> se = c.getActiveAudioSessions();
+    std::vector<AudioSession> se = c.getActiveAudioSessions();
     qDebug() << "Active audio sessions";
     for (const auto &session : se)
     {
@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
         qDebug() << "Name:" << session.friendlyName;
         qDebug() << "Icon:" << session.iconPath;
     }
-    c.setVolumeForProcess(8724, 0.5f);
+    // c.setVolumeForProcess(8724, 0.5f);
     MainWindow w;
     w.show();
     return a.exec();
