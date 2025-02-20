@@ -10,9 +10,9 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    connect(ui->verticalSlider, &QSlider:: valueChanged, this, &MainWindow::on_verticalSlider_sliderMoved); // Connect to Slider Bar
+    connect(ui->Master_Volume_Sider, &QSlider:: valueChanged, this, &MainWindow::on_verticalSlider_sliderMoved); // Connect to Slider Bar
 
-    connect(ui->progressBar, &QProgressBar::valueChanged, this, &MainWindow::on_progressBar_valueChanged); // Connect progress bar to slider
+    connect(ui->Master_Volume_Progress, &QProgressBar::valueChanged, this, &MainWindow::on_progressBar_valueChanged); // Connect progress bar to slider
 }
 
 MainWindow::~MainWindow()
@@ -22,12 +22,12 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_verticalSlider_sliderMoved(int value)
 {
-    ui->progressBar->setValue(value);
+    ui->Master_Volume_Progress->setValue(value);
 }
 
 void MainWindow::on_progressBar_valueChanged(int value) // Update slider bar if progress bar changes
 {
-    ui->verticalSlider->setValue(value);
+    ui->Master_Volume_Sider->setValue(value);
 }
 
 
