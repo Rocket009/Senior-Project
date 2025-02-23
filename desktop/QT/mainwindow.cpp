@@ -3,6 +3,11 @@
 #include <QSlider>
 #include <QProgressBar>
 #include "processvolumeslider.h"
+#ifdef WIN32
+    #include "windowsaudiosessioncontroller.h"
+#elif LINUX
+// todo
+#endif
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -10,7 +15,11 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    audioController = std::shared_ptr<AudioSessionController>(new AudioSessionController());
+#ifdef WIN32
+    audioController = std::shared_ptr<IAudioSessionController>(new WindowsAudioSessionController());
+#elif LINUX
+    audioController = std::shared_ptr<IAudioSessionController>(new IAudioSessionController);
+#endif
     createProcessVolumeWidgets();
 }
 
