@@ -1,4 +1,4 @@
-#include "AudioSessionController.h"
+#include "WindowsAudioSessionController.h"
 #include <QDebug>
 #include <propvarutil.h>
 #include <Functiondiscoverykeys_devpkey.h>
@@ -6,23 +6,23 @@
 #include <QFileInfo>
 #include <Psapi.h>
 
+
 PROPERTYKEY key = { { 0x9F4C2855, 0x9F79, 0x4B39, { 0xA8, 0xD0, 0xE1, 0xD4, 0x62, 0x1E, 0xE8, 0x83 } }, 5 };
 static const PROPERTYKEY PKEY_AppUserModel_RelaunchIconResource =
     { { 0x9F4C2855, 0x9F79, 0x4B39, { 0xA8, 0xD0, 0xE1, 0xD4, 0x62, 0x1E, 0xE8, 0x83 } }, 17 };
 
 
-AudioSessionController::AudioSessionController(QObject *parent)
-    : QObject(parent)
+WindowsAudioSessionController::WindowsAudioSessionController(QObject *parent)
 {
     CoInitialize(nullptr);
 }
 
-AudioSessionController::~AudioSessionController()
+WindowsAudioSessionController::~WindowsAudioSessionController()
 {
     CoUninitialize();
 }
 
-IMMDevice* AudioSessionController::findDeviceSession(DWORD procID, const std::vector<AudioSessionInfo> &session)
+IMMDevice* WindowsAudioSessionController::findDeviceSession(DWORD procID, const std::vector<AudioSessionInfo> &session)
 {
     for(const auto &s : session)
     {
@@ -30,7 +30,7 @@ IMMDevice* AudioSessionController::findDeviceSession(DWORD procID, const std::ve
     }
     return nullptr;
 }
-bool AudioSessionController::getAudioSessionControl(DWORD processId, IAudioSessionControl **sessionControl)
+bool WindowsAudioSessionController::getAudioSessionControl(DWORD processId, IAudioSessionControl **sessionControl)
 {
     *sessionControl = nullptr;
 
@@ -122,7 +122,7 @@ bool AudioSessionController::getAudioSessionControl(DWORD processId, IAudioSessi
     return false;
 }
 
-bool AudioSessionController::setVolumeForProcess(const AudioSession &s, float volume)
+bool WindowsAudioSessionController::setVolumeForProcess(const AudioSession &s, float volume)
 {
     if (volume < 0.0f || volume > 1.0f)
     {
@@ -158,7 +158,7 @@ bool AudioSessionController::setVolumeForProcess(const AudioSession &s, float vo
     return true;
 }
 
-float AudioSessionController::getVolumeForProcess(const AudioSession &s)
+float WindowsAudioSessionController::getVolumeForProcess(const AudioSession &s)
 {
     IAudioSessionControl *sessionControl = nullptr;
     if (!getAudioSessionControl(s.processId, &sessionControl))
@@ -179,7 +179,7 @@ float AudioSessionController::getVolumeForProcess(const AudioSession &s)
     return volume;
 }
 
-bool AudioSessionController::muteProcess(const AudioSession &s, bool mute)
+bool WindowsAudioSessionController::muteProcess(const AudioSession &s, bool mute)
 {
     IAudioSessionControl *sessionControl = nullptr;
     if (!getAudioSessionControl(s.processId, &sessionControl))
@@ -209,7 +209,7 @@ bool AudioSessionController::muteProcess(const AudioSession &s, bool mute)
     return true;
 }
 
-std::vector<AudioSession> AudioSessionController::getActiveAudioSessions()
+std::vector<AudioSession> WindowsAudioSessionController::getActiveAudioSessions()
 {
     std::vector<AudioSession> sessions;
 
@@ -334,7 +334,7 @@ std::vector<AudioSession> AudioSessionController::getActiveAudioSessions()
     return sessions;
 }
 
-std::vector<AudioSessionInfo> AudioSessionController::getAudioSessions()
+std::vector<WindowsAudioSessionController::AudioSessionInfo> WindowsAudioSessionController::getAudioSessions()
 {
     std::vector<AudioSessionInfo> sessions;
 

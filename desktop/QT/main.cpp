@@ -1,12 +1,12 @@
 #include "mainwindow.h"
-#include "audiosessioncontroller.h"
+#include "windowsaudiosessioncontroller.h"
 
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    AudioSessionController c;
+    WindowsAudioSessionController c;
     std::vector<AudioSession> se = c.getActiveAudioSessions();
     qDebug() << "Active audio sessions";
     for (const auto &session : se)

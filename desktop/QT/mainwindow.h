@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "audiosessioncontroller.h"
+#include "iaudiosessioncontroller.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -22,7 +22,7 @@ public:
 private:
     Ui::MainWindow *ui;
     void createProcessVolumeWidgets();
-    std::shared_ptr<AudioSessionController> audioController;
+    std::shared_ptr<IAudioSessionController> audioController;
 
 };
 #endif // MAINWINDOW_H

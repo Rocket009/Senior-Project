@@ -15,7 +15,7 @@ ProcessVolumeSlider::~ProcessVolumeSlider()
     delete ui;
 }
 
-void ProcessVolumeSlider::bindAudioSession(std::shared_ptr<AudioSessionController> c, AudioSession s)
+void ProcessVolumeSlider::bindAudioSession(std::shared_ptr<IAudioSessionController> c, AudioSession s)
 {
     controller = c;
     session = s;
