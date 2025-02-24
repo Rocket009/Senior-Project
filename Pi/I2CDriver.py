@@ -8,11 +8,6 @@ class I2CDriver(BaseI2C):
         self._smbus = SMBus(bus=bus)
 
     def readfrom(self, addr: int, nbytes: int, force=None) -> bytes:
-        """
-        Reads from the address a number of bytes nbytes must be > 0
-        Reads on seperate transactions. To read on one transaction use
-        ``readfrom_reg``
-        """
         try:
             if nbytes == 1:
                 return bytes(self._smbus.read_byte(addr), force=force)
