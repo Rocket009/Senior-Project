@@ -21,6 +21,7 @@ SOURCES += \
     windowsaudiosessioncontroller.cpp
 
 HEADERS += \
+    iaudiosessioncapture.h \
     iaudiosessioncontroller.h \
     mainwindow.h \
     processvolumeslider.h \
