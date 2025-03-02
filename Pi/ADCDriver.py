@@ -19,7 +19,7 @@ class ADCDriver:
         read_msg = i2c_msg.read(self._addr, 1)
         try:
             self._sm.i2c_rdwr(write_msg, read_msg)
-            adc_val = int(read_msg.buf[0])
+            adc_val = int.from_bytes(read_msg.buf[0], byteorder="big")
             if float_type:
                 res = REF_VOLTAGE / 255
                 return res * adc_val
