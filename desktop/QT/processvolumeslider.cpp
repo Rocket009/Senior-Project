@@ -23,14 +23,19 @@ void ProcessVolumeSlider::bindAudioSession(std::shared_ptr<IAudioSessionControll
     int current_vol =  current_volf * 100.0f;
     ui->Master_Volume_Sider->setValue(current_vol);
     ui->ProcessNameLabel->setText(s.friendlyName);
+    currentVolume = current_vol;
     emit onChange(this);
 }
 
 void ProcessVolumeSlider::volumeChanged(int value)
 {
-    float v = value / 100.0f;
-    controller->setVolumeForProcess(session, v);
-    emit onChange(this);
+    if(currentVolume != value)
+    {
+        float v = value / 100.0f;
+        controller->setVolumeForProcess(session, v);
+        currentVolume = value;
+        emit onChange(this);
+    }
 }
 
 QString ProcessVolumeSlider::getProcessName()
@@ -38,13 +43,17 @@ QString ProcessVolumeSlider::getProcessName()
     return ui->ProcessNameLabel->text();
 }
 
-float ProcessVolumeSlider::getCurrentVolume()
+int ProcessVolumeSlider::getCurrentVolume()
 {
-    return ui->Master_Volume_Sider->value() / 100.0f;
+    return ui->Master_Volume_Sider->value();
 }
 
-void ProcessVolumeSlider::setCurrentVolume(float v)
+void ProcessVolumeSlider::setCurrentVolume(int v)
 {
-    int vol = v * 100;
-    ui->Master_Volume_Sider->setValue(vol);
+    if(currentVolume != v)
+    {
+        ui->Master_Volume_Sider->setValue(v);
+        currentVolume = v;
+    }
+
 }

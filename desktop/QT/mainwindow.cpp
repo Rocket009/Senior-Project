@@ -103,7 +103,8 @@ void MainWindow::onSerialInput(const QJsonObject &json)
             {
                 if(vec[i]->getProcessName() == n.toString())
                 {
-                    vec[i]->setCurrentVolume(v.toDouble());
+
+                    vec[i]->setCurrentVolume((int)v.toDouble());
                 }
             }
         }
