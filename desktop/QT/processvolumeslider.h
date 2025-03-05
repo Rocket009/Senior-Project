@@ -18,6 +18,7 @@ public:
     void bindAudioSession(std::shared_ptr<IAudioSessionController> c, AudioSession s);
     QString getProcessName();
     float getCurrentVolume();
+    void setCurrentVolume(float v);
 signals:
     void onChange(ProcessVolumeSlider* p);
 private slots:

@@ -46,6 +46,7 @@ void MainWindow::createProcessVolumeWidgets()
         layout = new QHBoxLayout(container);
         container->setLayout(layout);
     }
+    volumeSliderLayout = layout;
     std::vector<AudioSession> sessions = audioController->getActiveAudioSessions();
     for(auto &sess : sessions)
     {
@@ -62,10 +63,6 @@ void MainWindow::createProcessVolumeWidgets()
 
     }
     layout->setSizeConstraint(QLayout::SetMinimumSize);
-    for(QObject* s : layout->children())
-    {
-        qDebug() << s->objectName();
-    }
     container->setMinimumSize(container->sizeHint());
     container->adjustSize();
 }
@@ -96,7 +93,20 @@ void MainWindow::onSerialInput(const QJsonObject &json)
     qDebug() << json;
     if(json.contains("Process"))
     {
-        QJsonObject p = json["Process"]
+        QJsonObject p = json["Process"].toObject();
+        QJsonValue v = p["Volume"];
+        QJsonValue n = p["Name"];
+        if(v.type() == QJsonValue::Double && n.type() == QJsonValue::String)
+        {
+            std::vector<ProcessVolumeSlider*> vec = MainWindow::getWidgetsFromLayout<ProcessVolumeSlider>(volumeSliderLayout);
+            for(int i = 0; i < vec.size(); i++)
+            {
+                if(vec[i]->getProcessName() == n.toString())
+                {
+                    vec[i]->setCurrentVolume(v.toDouble());
+                }
+            }
+        }
     }
 }
 

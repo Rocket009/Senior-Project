@@ -40,5 +40,11 @@ QString ProcessVolumeSlider::getProcessName()
 
 float ProcessVolumeSlider::getCurrentVolume()
 {
-    return ui->Master_Volume_Sider->value();
+    return ui->Master_Volume_Sider->value() / 100.0f;
+}
+
+void ProcessVolumeSlider::setCurrentVolume(float v)
+{
+    int vol = v * 100;
+    ui->Master_Volume_Sider->setValue(vol);
 }
