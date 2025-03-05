@@ -13,23 +13,31 @@ INCLUDEPATH += $${QT_SYSROOT}/include
 }
 
 SOURCES += \
-    audiosessioncontroller.cpp \
     main.cpp \
     mainwindow.cpp \
+    processvolumeslider.cpp \
     serialhandler.cpp \
-    settings.cpp
+    settings.cpp \
+    windowsaudiosessioncontroller.cpp
 
 HEADERS += \
-    audiosessioncontroller.h \
+    iaudiosessioncapture.h \
+    iaudiosessioncontroller.h \
     mainwindow.h \
+    processvolumeslider.h \
     serialhandler.h \
-    settings.h
+    settings.h \
+    windowsaudiosessioncontroller.h
 
 FORMS += \
     mainwindow.ui \
+    processvolumeslider.ui \
     settings.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    desktop_gui.qmodel

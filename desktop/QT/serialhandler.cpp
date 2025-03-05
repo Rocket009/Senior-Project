@@ -1,50 +1,94 @@
 #include "SerialHandler.h"
 #include <QJsonParseError>
 #include <QDebug>
+#include <QtSerialPort/QSerialPortInfo>
+#include <chrono>
 
-SerialHandler::SerialHandler(const QString &portName, int baudRate, QObject *parent)
-    : QThread(parent), portName(portName), baudRate(baudRate), running(true), serial(nullptr) {}
+static constexpr std::chrono::seconds serialWriteTimeout = std::chrono::seconds{5};
+
+#define RPI_USB_DESCRIPTION "Gadget Serial v2.4"
+
+SerialHandler::SerialHandler(QObject *parent) : QObject(parent) {}
+
+bool SerialHandler::connectSerial()
+{
+    if(timer == nullptr)
+    {
+        timer = new QTimer(this);
+        connect(timer, &QTimer::timeout, this, [=](){emit errorOccurred(SerialPortError::TimeoutError);});
+        timer->setSingleShot(true);
+    }
+    if(serial == nullptr)
+    {
+        serial = new QSerialPort();
+        connect(serial, &QSerialPort::errorOccurred, this, [=](QSerialPort::SerialPortError e){
+            emit errorOccurred(static_cast<SerialPortError>(e));
+        });
+        connect(serial, &QSerialPort::readyRead, this, &SerialHandler::processIncomingData);
+        connect(serial, &QSerialPort::bytesWritten, this, &SerialHandler::handleBytesWritten);
+    }
+    for(const auto &p : QSerialPortInfo::availablePorts())
+    {
+        if(p.description() == RPI_USB_DESCRIPTION)
+        {
+            port = p;
+            break;
+        }
+    }
+
+    if(!port.isNull())
+    {
+        serial->setPort(port);
+        if (!serial->open(QIODevice::ReadWrite))
+        {
+            serial->setBaudRate(QSerialPort::Baud115200);
+            return true;
+        }
+        else return false;
+    }
+    else return false;
+
+}
+
+bool SerialHandler::isOpen()
+{
+    return serial->isOpen();
+}
+
+void SerialHandler::disconnectSerial()
+{
+    if(isOpen()) serial->close();
+}
 
 SerialHandler::~SerialHandler() {
-    stop();
-}
-
-void SerialHandler::run() {
-    serial = new QSerialPort();
-    serial->setPortName(portName);
-    serial->setBaudRate(baudRate);
-
-    if (!serial->open(QIODevice::ReadWrite)) {
-        emit errorOccurred("Failed to open serial port: " + serial->errorString());
-        return;
-    }
-
-    while (running) {
-        if (serial->waitForReadyRead(100)) {
-            processIncomingData();
-        }
-        QThread::msleep(10);  // Reduce CPU usage
-    }
-
-    serial->close();
+    if(serial->isOpen()) serial->close();
+    disconnect(serial, nullptr, nullptr, nullptr);
     delete serial;
     serial = nullptr;
+    delete timer;
+    timer = nullptr;
 }
 
-void SerialHandler::stop() {
-    QMutexLocker locker(&mutex);
-    running = false;
+void SerialHandler::findSerialPort()
+{
+
 }
+
 
 void SerialHandler::sendJson(const QJsonObject &json) {
     if (!serial || !serial->isOpen()) {
-        emit errorOccurred("Serial port is not open");
+        emit errorOccurred(SerialPortError::NotOpenError);
         return;
     }
 
     QByteArray data = QJsonDocument(json).toJson(QJsonDocument::Compact) + "\n"; // Append newline for easy parsing
-    serial->write(data);
-    serial->flush();
+    const qint64 written = serial->write(data);
+    if(written == data.size())
+    {
+        bytesToWrite += written;
+        timer->start(serialWriteTimeout);
+    }
+    else emit errorOccurred(SerialPortError::WriteError);
 }
 
 void SerialHandler::processIncomingData() {
@@ -62,7 +106,13 @@ void SerialHandler::processIncomingData() {
         if (parseError.error == QJsonParseError::NoError && doc.isObject()) {
             emit jsonReceived(doc.object());
         } else {
-            emit errorOccurred("Failed to parse JSON: " + parseError.errorString());
+            emit errorOccurred(SerialPortError::UnknownError);
         }
     }
+}
+
+void SerialHandler::handleBytesWritten(qint64 bytes)
+{
+    bytesToWrite -= bytes;
+    if(bytesToWrite == 0) timer->stop();
 }

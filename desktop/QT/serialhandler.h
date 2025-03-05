@@ -1,37 +1,43 @@
 #ifndef SERIALHANDLER_H
 #define SERIALHANDLER_H
 
-#include <QThread>
 #include <QtSerialPort/QSerialPort>
+#include <QtSerialPort/QSerialPortInfo>
 #include <QJsonDocument>
 #include <QJsonObject>
-#include <QMutex>
+#include <QTimer>
 
-class SerialHandler : public QThread {
+typedef QSerialPort::SerialPortError SerialPortError;
+
+class SerialHandler : public QObject {
     Q_OBJECT
 
 public:
-    explicit SerialHandler(const QString &portName, int baudRate = QSerialPort::Baud115200, QObject *parent = nullptr);
+    explicit SerialHandler(QObject *parent = nullptr);
     ~SerialHandler();
 
-    void run() override;
-    void stop();
+    bool connectSerial();
+    void disconnectSerial();
+    bool isOpen();
 
 public slots:
     void sendJson(const QJsonObject &json);
 
 signals:
     void jsonReceived(const QJsonObject &json);
-    void errorOccurred(const QString &error);
+    void errorOccurred(SerialPortError error);
 
 private:
-    QString portName;
+    QSerialPortInfo port;
     int baudRate;
-    QSerialPort *serial;
-    QMutex mutex;
-    bool running;
-
+    QSerialPort *serial = nullptr;
+    void findSerialPort();
+    qint64 bytesToWrite = 0;
+    QTimer *timer = nullptr;
+private slots:
     void processIncomingData();
+    void handleBytesWritten(qint64 bytes);
+
 };
 
 #endif // SERIALHANDLER_H
