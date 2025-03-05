@@ -16,6 +16,10 @@ public:
     explicit ProcessVolumeSlider(QWidget *parent = nullptr);
     ~ProcessVolumeSlider();
     void bindAudioSession(std::shared_ptr<IAudioSessionController> c, AudioSession s);
+    QString getProcessName();
+    float getCurrentVolume();
+signals:
+    void onChange(ProcessVolumeSlider* p);
 private slots:
     void volumeChanged(int value);
 

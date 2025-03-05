@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 #include "iaudiosessioncontroller.h"
+#include "processvolumeslider.h"
+#include "serialhandler.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -23,6 +25,11 @@ private:
     Ui::MainWindow *ui;
     void createProcessVolumeWidgets();
     std::shared_ptr<IAudioSessionController> audioController;
+    SerialHandler serial;
+private slots:
+    void onProcessSliderChange(ProcessVolumeSlider* s);
+    void onSerialError(SerialPortError e);
+    void onSerialInput(const QJsonObject &json);
 
 };
 #endif // MAINWINDOW_H

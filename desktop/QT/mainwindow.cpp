@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include <QSlider>
 #include <QProgressBar>
+#include <QJsonObject>
 #include "processvolumeslider.h"
 #ifdef WIN32
     #include "windowsaudiosessioncontroller.h"
@@ -20,7 +21,10 @@ MainWindow::MainWindow(QWidget *parent)
 #elif LINUX
     audioController = std::shared_ptr<IAudioSessionController>(new IAudioSessionController);
 #endif
+    connect(&serial, &SerialHandler::errorOccurred, this, &MainWindow::onSerialError);
+    connect(&serial, &SerialHandler::jsonReceived, this, &MainWindow::onSerialInput);
     createProcessVolumeWidgets();
+    serial.connectSerial();
 }
 
 MainWindow::~MainWindow()
@@ -46,8 +50,11 @@ void MainWindow::createProcessVolumeWidgets()
     for(auto &sess : sessions)
     {
 
+        if(sess.friendlyName.isNull() || sess.friendlyName.isEmpty())
+            continue;
         ProcessVolumeSlider* s = new ProcessVolumeSlider();
         s->bindAudioSession(audioController, sess);
+        connect(s, &ProcessVolumeSlider::onChange, this, &MainWindow::onProcessSliderChange);
         layout->addWidget(s);
         s->show();
         ui->scrollArea->adjustSize();
@@ -63,6 +70,33 @@ void MainWindow::createProcessVolumeWidgets()
     container->adjustSize();
 }
 
+void MainWindow::onProcessSliderChange(ProcessVolumeSlider* s)
+{
+    QJsonObject j
+    {
+        {"Process", QJsonObject {
+                {"Volume", s->getCurrentVolume()},
+                {"Name", s->getProcessName()}
+            }
+        }
+    };
 
+    if(serial.isOpen()) serial.sendJson(j);
+}
 
+void MainWindow::onSerialError(SerialPortError e)
+{
+    if(e == SerialPortError::NoError)
+        return;
+    qWarning() << e;
+}
+
+void MainWindow::onSerialInput(const QJsonObject &json)
+{
+    qDebug() << json;
+    if(json.contains("Process"))
+    {
+        QJsonObject p = json["Process"]
+    }
+}
 
